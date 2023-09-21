@@ -88,7 +88,7 @@ a {
 }
 
 
-/*Portada*/
+/*Inicio Portada*/
 #portada {
     height: 82vh;
     display: flex;
@@ -261,6 +261,70 @@ main {
     width: 142px;
     height: 199px;
 }
+
+.proyecto1{
+    align-items: end;
+}
+
+.descripcionProyecto1{
+    display: flex;
+    justify-content: center;
+}
+
+.parque1_1{
+    grid-area: parque1_1;
+}
+
+.parque1_2{
+    grid-area: parque1_2;
+}
+
+.parque1_3{
+    grid-area: parque1_3;
+}
+
+.parque1_4{
+    grid-area: parque1_4;
+}
+
+.parque1_5{
+    grid-area: parque1_5;
+}
+
+.proyecto1{
+    display: grid;
+    grid-template-areas: 
+    "parque1_1 parque1_2 parque1_3 parque1_5"
+    "parque1_1 parque1_4 parque1_4 parque1_5";
+
+   /*Puedo reemplazar cualquier unidad de medida por auto y funcionaria como un fr"*/
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   
+   /*puedo usar gap como shortcut para agregar separaciones tanto verticales como horizontales*/
+   row-gap: 5px;
+   column-gap: 10px;
+   margin: 0;
+   justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Nosotros*/
 .seccionNosotros {
