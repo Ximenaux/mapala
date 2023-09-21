@@ -196,16 +196,40 @@ h2 {
     justify-content: center;
 }
 
-#proyectosRecientes {
+main {
+    justify-content: center;
+}
+
+
+.proyectosRecientes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+}
+
+.proyectosRecientesTitulo {
+    grid-area: proyectostitulo;
+}
+
+.imgsProyectosRecientes {
+    grid-area: imagenesproyectos;
+}
+
+.proyectosRecientes {
+    display: grid;
+    grid-template-areas:
+        "proyectostitulo proyectostitulo proyectostitulo"
+        "imagenesproyectos imagenesproyectos imagenesproyectos";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
     align-items: center;
-    margin: 70px 0 70px 0px;
 }
 
 .imgProyectosRecientes {
-    width: 100%;
-    height: auto;
+    padding: 2px;
+    width: auto;
 }
 
 .col {
