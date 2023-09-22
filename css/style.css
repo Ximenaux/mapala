@@ -1,5 +1,4 @@
 * {
-    background-color: black;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -16,9 +15,13 @@ body {
 
 hr {
     width: 80%;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-left: 10%;
     opacity: 100%;
+}
+
+a{
+    background-color: black;
 }
 
 /*Header*/
@@ -34,7 +37,7 @@ header {
 }
 
 header nav {
-    background-color: none;
+    background-color: black;
 }
 
 header nav ul {
@@ -55,15 +58,27 @@ a {
 }
 
 /*BARRA DE NAVEGACION bootstrap*/
+.header{
+    background-color: black;
+}
+
+.bg-body-tertiary{
+    --bs-bg-opacity: none;
+}
+
 .navbar {
     background-color: black;
-    padding: 0;
-    justify-content: space-between;
-    width: auto;
+    width: 100%;
+    padding: 0px;
+}
+
+.container{
+    background-color: black;
 }
 
 #navbarNav {
     justify-content: flex-end;
+    background-color: #010101;
 }
 
 .navbar-brand {
@@ -90,7 +105,7 @@ a {
 
 /*Inicio Portada*/
 #portada {
-    height: 82vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +113,7 @@ a {
 }
 
 .tituloPrincipalHome {
-    max-width: 50rem;
+    max-width: 40rem;
     display: flex;
     text-align: center;
     line-height: 70px;
@@ -115,6 +130,10 @@ a {
     font-size: 64px;
     font-weight: 700;
     font-style: normal
+}
+
+h2 {
+    padding: 50px 0px 26px 0px;
 }
 
 .parrafoMain {
@@ -217,7 +236,7 @@ main {
     grid-area: imagenesproyectos;
 }
 
-.proyectosRecientes {
+.imgsProyectosRecientes {
     display: grid;
     grid-template-areas:
         "proyectostitulo proyectostitulo proyectostitulo"
@@ -240,7 +259,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 125px;
+    margin-top: 55px;
 }
 
 .logosCentrosComerciales {
@@ -260,71 +279,105 @@ main {
 .iconoProyectos {
     width: 142px;
     height: 199px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
-.proyecto1{
+.tituloPrincipal {
+    padding-top: 170px;
+}
+
+.tituloProyecto1 {
+    padding: 70px 0px 5px 0px;
+}
+
+.tituloProyecto2 {
+    padding: 90px 0px 5px 0px;
+}
+
+.proyecto1 {
     align-items: end;
 }
 
-.descripcionProyecto1{
+.descripcionProyectos {
     display: flex;
     justify-content: center;
+    padding: 3px 0px 40px 0px;
+    ;
 }
 
-.parque1_1{
+/*Galeria Proyecto 1*/
+.parque1_1 {
     grid-area: parque1_1;
 }
 
-.parque1_2{
+.parque1_2 {
     grid-area: parque1_2;
 }
 
-.parque1_3{
+.parque1_3 {
     grid-area: parque1_3;
 }
 
-.parque1_4{
+.parque1_4 {
     grid-area: parque1_4;
 }
 
-.parque1_5{
+.parque1_5 {
     grid-area: parque1_5;
 }
 
-.proyecto1{
+.proyecto1 {
     display: grid;
-    grid-template-areas: 
-    "parque1_1 parque1_2 parque1_3 parque1_5"
-    "parque1_1 parque1_4 parque1_4 parque1_5";
+    grid-template-areas:
+        "parque1_1 parque1_2 parque1_3 parque1_5"
+        "parque1_1 parque1_4 parque1_4 parque1_5";
 
-   /*Puedo reemplazar cualquier unidad de medida por auto y funcionaria como un fr"*/
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   
-   /*puedo usar gap como shortcut para agregar separaciones tanto verticales como horizontales*/
-   row-gap: 5px;
-   column-gap: 10px;
-   margin: 0;
-   justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 10px;
+    margin: 0;
+    justify-content: center;
 
 }
 
+/*Galeria Proyecto 2*/
+.parque2_1 {
+    grid-area: parque2_1;
+}
 
+.parque2_2 {
+    grid-area: parque2_2;
+}
 
+.parque2_3 {
+    grid-area: parque2_3;
+}
 
+.parque2_4 {
+    grid-area: parque2_4;
+}
 
+.parque2_5 {
+    grid-area: parque2_5;
+}
 
+.proyecto2 {
+    display: grid;
+    grid-template-areas:
+        "parque2_2 parque2_2 parque2_5 parque2_3"
+        "parque2_1 parque2_4 parque2_4 parque2_3";
 
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    column-gap: 10px;
+    margin: 0;
+    justify-content: center;
 
-
-
-
-
-
-
-
-
-
+}
 
 /*Nosotros*/
 .seccionNosotros {
