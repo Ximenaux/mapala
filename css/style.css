@@ -379,11 +379,11 @@ main {
 
 }
 
-#carouselExampleIndicators {
+#carouselExampleRide {
     display: none;
 }
 
-#carouselExampleInterval{
+#carouselExampleInterval {
     display: none;
 }
 
@@ -744,11 +744,39 @@ fieldset {
         margin-top: 40px;
     }
 
-    .tituloPrincipal{
-        font-size: 64px;
+    .tituloPrincipal {
+        font-size: 50px;
         font-weight: 700;
-        font-style: normal
+        font-style: normal;
+        text-align: center;
     }
+
+    .col-9 {
+        width: auto;
+    }
+
+    .col-7 {
+        width: auto;
+        text-align: center;
+
+    }
+
+    .parrafosPrincipales {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+    }
+
+    .iconoProyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 
     .proyecto1 {
         display: none;
@@ -758,7 +786,7 @@ fieldset {
         display: none;
     }
 
-    #carouselExampleIndicators {
+    #carouselExampleRide {
         display: flex;
     }
 
@@ -850,6 +878,12 @@ fieldset {
         margin-top: 8px;
     }
 
+    .row {
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
     .imgProyectosRecientes {
         display: flex;
         flex-direction: column;
@@ -884,7 +918,7 @@ fieldset {
         display: none;
     }
 
-    #carouselExampleIndicators {
+    #carouselExampleRide {
         display: flex;
     }
 
