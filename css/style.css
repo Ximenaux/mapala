@@ -379,6 +379,14 @@ main {
 
 }
 
+#carouselExampleIndicators {
+    display: none;
+}
+
+#carouselExampleInterval{
+    display: none;
+}
+
 /*Nosotros*/
 .seccionNosotros {
     height: 700px;
@@ -598,8 +606,6 @@ fieldset {
     padding: 0px;
 }
 
-
-
 .lineaFooter {
     width: 10%;
     margin-top: -34px;
@@ -654,10 +660,15 @@ fieldset {
     #portada {
         padding: 150px 0px 80px 0px;
     }
+
     .imgsProyectosRecientes {
 
         display: flex;
         flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     .imgProyectosRecientes {
@@ -719,6 +730,40 @@ fieldset {
 
     .row {
         justify-content: center;
+    }
+
+    .tituloFooter {
+        margin: 30px 0px 20px 0px;
+    }
+
+    .derechos {
+        text-align: center;
+    }
+
+    .lineaFooter {
+        margin-top: 40px;
+    }
+
+    .tituloPrincipal{
+        font-size: 64px;
+        font-weight: 700;
+        font-style: normal
+    }
+
+    .proyecto1 {
+        display: none;
+    }
+
+    .proyecto2 {
+        display: none;
+    }
+
+    #carouselExampleIndicators {
+        display: flex;
+    }
+
+    #carouselExampleInterval {
+        display: flex;
     }
 
 }
@@ -733,6 +778,12 @@ fieldset {
         padding: 150px 0px 80px 0px;
     }
 
+
+    h2 {
+        text-align: center;
+    }
+
+
     .imgsProyectosRecientes {
         display: flex;
         flex-direction: column;
@@ -743,19 +794,23 @@ fieldset {
         width: 100%;
     }
 
-    .imgClientesPortada {
-        display: none;
-    }
-
     .tituloPrincipalHome {
         font-size: 48px;
-        max-width: 300px;
+        max-width: 470px;
         line-height: 50px;
     }
 
     .parrafoMain {
         font-size: 22px;
-        max-width: 300px;
+        max-width: 380px;
+    }
+
+    .imgClientesPortada {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 55%;
+        right: 1%;
     }
 
     .imgForma1Portada {
@@ -788,7 +843,7 @@ fieldset {
         height: auto;
         position: absolute;
         top: 65%;
-        right: 70%;
+        right: 85%;
     }
 
     .hr {
@@ -802,6 +857,39 @@ fieldset {
 
     .row {
         justify-content: center;
+    }
+
+    .footerA {
+        text-align: center;
+    }
+
+    .tituloFooter {
+        font-weight: 500;
+        margin: 30px 0px 20px 0px;
+    }
+
+    .titulosFooter {
+        margin: 30px;
+    }
+
+    .derechos {
+        text-align: center;
+    }
+
+    .proyecto1 {
+        display: none;
+    }
+
+    .proyecto2 {
+        display: none;
+    }
+
+    #carouselExampleIndicators {
+        display: flex;
+    }
+
+    #carouselExampleInterval {
+        display: flex;
     }
 
 }
