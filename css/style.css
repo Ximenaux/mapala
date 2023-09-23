@@ -20,7 +20,7 @@ hr {
     opacity: 100%;
 }
 
-a{
+a {
     background-color: black;
 }
 
@@ -58,21 +58,20 @@ a {
 }
 
 /*BARRA DE NAVEGACION bootstrap*/
-.header{
+.header {
     background-color: black;
 }
 
-.bg-body-tertiary{
+.bg-body-tertiary {
     --bs-bg-opacity: none;
 }
 
 .navbar {
-    background-color: black;
     width: 100%;
     padding: 0px;
 }
 
-.container{
+.container {
     background-color: black;
 }
 
@@ -176,16 +175,16 @@ h2 {
     width: 141px;
     height: 117px;
     position: absolute;
-    top: 5rem;
-    right: -10rem;
+    top: 24%;
+    right: -30%;
 }
 
 .imgCohetePortada {
     width: 260px;
     height: 201px;
     position: absolute;
-    top: 14rem;
-    right: 43rem;
+    top: 50%;
+    right: 95%;
 }
 
 .imgForma1Portada {
@@ -193,16 +192,16 @@ h2 {
     height: 72.327px;
     transform: rotate(148.76deg);
     position: absolute;
-    top: -6rem;
-    right: 30rem;
+    top: -25%;
+    right: 63%;
 }
 
 .imgForma2Portada {
     width: 91px;
     height: 93px;
     position: absolute;
-    top: 23rem;
-    right: 2rem;
+    top: 100%;
+    right: 10%;
 }
 
 h2 {
@@ -244,6 +243,7 @@ main {
     grid-template-columns: auto;
     grid-template-rows: 1fr auto;
     align-items: center;
+    display: flex;
 }
 
 .imgProyectosRecientes {
@@ -645,10 +645,163 @@ fieldset {
 
 /*Media query*/
 
-@media (min-width:320px) .tituloPrincipalHome {
-    font-size: 40px;
+@media screen and (max-width:320px) {
+
+    .logoMapala {
+        width: 150px;
+    }
+
+    #portada {
+        padding: 150px 0px 80px 0px;
+    }
+    .imgsProyectosRecientes {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgProyectosRecientes {
+        padding: 2px;
+        width: 100%;
+    }
+
+    .tituloPrincipalHome {
+        font-size: 48px;
+        max-width: 300px;
+        line-height: 50px;
+    }
+
+    .parrafoMain {
+        font-size: 22px;
+        max-width: 300px;
+    }
+
+    .imgClientesPortada {
+        display: none;
+    }
+
+    .imgForma1Portada {
+        width: 70.772px;
+        height: 72.327px;
+        transform: rotate(148.76deg);
+        position: absolute;
+        top: -15%;
+        right: 63%;
+    }
+
+    .imgForma2Portada {
+        width: 60px;
+        height: auto;
+        position: absolute;
+        top: 100%;
+        right: 30%;
+    }
+
+    .imgForma1Portada {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -20%;
+        right: 60%;
+    }
+
+    .imgCohetePortada {
+        width: 120px;
+        height: auto;
+        position: absolute;
+        top: 65%;
+        right: 70%;
+    }
+
+    .hr {
+        margin-top: 8px;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
 }
 
-@media (max-width:1532px) .tituloPrincipalHome {
-    font-size: 64px;
+@media screen and (max-width:768px) {
+
+    .logoMapala {
+        width: 150px;
+    }
+
+    #portada {
+        padding: 150px 0px 80px 0px;
+    }
+
+    .imgsProyectosRecientes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgProyectosRecientes {
+        padding: 2px;
+        width: 100%;
+    }
+
+    .imgClientesPortada {
+        display: none;
+    }
+
+    .tituloPrincipalHome {
+        font-size: 48px;
+        max-width: 300px;
+        line-height: 50px;
+    }
+
+    .parrafoMain {
+        font-size: 22px;
+        max-width: 300px;
+    }
+
+    .imgForma1Portada {
+        width: 70.772px;
+        height: 72.327px;
+        transform: rotate(148.76deg);
+        position: absolute;
+        top: -15%;
+        right: 63%;
+    }
+
+    .imgForma2Portada {
+        width: 60px;
+        height: auto;
+        position: absolute;
+        top: 100%;
+        right: 30%;
+    }
+
+    .imgForma1Portada {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -20%;
+        right: 60%;
+    }
+
+    .imgCohetePortada {
+        width: 120px;
+        height: auto;
+        position: absolute;
+        top: 65%;
+        right: 70%;
+    }
+
+    .hr {
+        margin-top: 8px;
+    }
+
+    .imgProyectosRecientes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
 }
