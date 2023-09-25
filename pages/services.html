@@ -4,48 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Link CSS -->
-     <link rel="stylesheet" href="../css/style.css">
 
-     <!-- Google fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;700&family=Yanone+Kaffeesatz:wght@300;400&display=swap"
-         rel="stylesheet">
+    <!-- Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;700&family=Yanone+Kaffeesatz:wght@300;400&display=swap"
+        rel="stylesheet">
     <title>Servicio/MAPALA</title>
 
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div>
-            <a href="../index.html">
-                <img src="../img/logo-mapala.svg" width="200px" alt="Logo mapala">
-            </a>
-        </div>
+    <header class="container-fluid">
 
-        <!-- Navbar-->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./projects.html">Proyectos</a></li>
-                <li><a href="./services.html">Servicios</a></li>
-                <li><a href="./us.html">Nosotros</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
+          <div class="container">
+    
+            <a href="../index.html">
+              <img class="logoMapala" src="../img/logo-mapala.svg" width="200px" alt="Logo mapala">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./projects.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./us.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
+        </div>
+      </header>
 
     <!-- Encabezado -->
     <main>
         <section>
             <h1 class="tituloPrincipal">SERVICIOS</h1>
-            <p class="parrafosPrincipales">Lorem ipsum dolor sit amet consectetur. Donec id in facilisis porttitor. Id eget vulputate sodales commodo. Nullam sit </p>
+            <p class="parrafosPrincipales">Lorem ipsum dolor sit amet consectetur. Donec id in facilisis porttitor. Id
+                eget vulputate sodales commodo. Nullam sit </p>
             <img src="../img/icono_saltarin_servicios.png" alt="Imagen saltarin en 3d" width="100px">
         </section>
-    
+
     </main>
 
 
@@ -56,14 +81,16 @@
         <img src="../img/Servicio_1_parques.png" alt="Foto arenero" width="300px">
         <div>
             <h2>ALQUILER DE PARQUES DE DIVERSIONES</h2>
-            <p class="descripcion">Alquila parques de diversiones a medida para espacios comerciales y aumenta el tráfico.</p>
+            <p class="descripcion">Alquila parques de diversiones a medida para espacios comerciales y aumenta el
+                tráfico.</p>
             <a class="boton" href="./contact.html">COTIZAR</a>
         </div>
 
         <img src="../img/Servicio_2_inflables.png" alt="Fotos inflable" width="300px">
         <div>
             <h2>ALQUILER DE SALTARINES</h2>
-            <p class="descripcion">Los saltarines o inflables son una forma divertida de generar experiencias fascinantes para toda la
+            <p class="descripcion">Los saltarines o inflables son una forma divertida de generar experiencias
+                fascinantes para toda la
                 familia.</p>
             <a class="boton" href="./contact.html">COTIZAR</a>
         </div>
@@ -115,6 +142,12 @@
         </div>
 
     </footer>
+
+    <!-- Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

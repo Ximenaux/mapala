@@ -163,6 +163,13 @@ h2 {
     margin: 43px;
 }
 
+.boton:hover{
+    background-color: #6025B5;
+    color: white;
+}
+
+
+
 .portadaPrincipal {
     display: flex;
     flex-direction: column;
