@@ -57,6 +57,10 @@ a {
     text-decoration: none;
 }
 
+h3{
+    font-weight:600 ;
+}
+
 /*BARRA DE NAVEGACION bootstrap*/
 .header {
     background-color: black;
@@ -129,6 +133,7 @@ a {
     font-size: 64px;
     font-weight: 700;
     font-style: normal
+    padding-top: 170px;
 }
 
 h2 {
@@ -289,10 +294,6 @@ main {
     margin: 1px;
 }
 
-.tituloPrincipal {
-    padding-top: 170px;
-}
-
 .mainPaginas{
     display: flex;
     flex-direction: column;
@@ -301,10 +302,6 @@ main {
 
 .tituloProyecto1 {
     padding: 70px 0px 5px 0px;
-}
-
-.tituloProyecto2 {
-    padding: 90px 0px 5px 0px;
 }
 
 .proyecto1 {
@@ -316,6 +313,32 @@ main {
     justify-content: center;
     padding: 3px 0px 40px 0px;
     ;
+}
+
+/*Servicios*/
+
+.valores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.imgvalores{
+    width: auto;
+    height: 180px;
+}
+
+.divValores{
+    justify-content: center;
+    margin: 32px;
+}
+
+.seccionServicios{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    text-align: center;
 }
 
 /*Galeria Proyecto 1*/
@@ -739,10 +762,6 @@ fieldset {
         margin-top: 8px;
     }
 
-    .row {
-        justify-content: center;
-    }
-
     .tituloFooter {
         margin: 30px 0px 20px 0px;
     }
@@ -756,7 +775,7 @@ fieldset {
     }
 
     .tituloPrincipal {
-        font-size: 44px;
+        font-size: 48px;
         max-width: 300px;
         line-height: 50px;
         font-style: normal;
@@ -825,6 +844,11 @@ fieldset {
         padding: 150px 0px 80px 0px;
     }
 
+    .mainPaginas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     h2 {
         text-align: center;
@@ -897,19 +921,9 @@ fieldset {
         margin-top: 8px;
     }
 
-    .row {
-        display: flex;
-        justify-content: flex-start;
-
-    }
-
     .imgProyectosRecientes {
         display: flex;
         flex-direction: column;
-    }
-
-    .row {
-        justify-content: center;
     }
 
     .footerA {
@@ -954,7 +968,7 @@ fieldset {
     }
 
     .tituloPrincipal {
-        font-size: 44px;
+        font-size: 48px;
         max-width: 300px;
         line-height: 50px;
         font-style: normal;
@@ -966,5 +980,6 @@ fieldset {
         max-width: 300px;
         line-height: 30px;
     }
+
 
 }
