@@ -332,13 +332,30 @@ main {
 .divValores{
     justify-content: center;
     margin: 32px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .seccionServicios{
     display: flex;
     flex-direction: row;
-    max-width: 500px;
+    max-width: 900px;
     text-align: center;
+    align-items: center;
+}
+
+.imgServicios{
+    width: 600px;
+    height: auto;
+    margin: 70px;
+}
+
+.cardServicios{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+
 }
 
 /*Galeria Proyecto 1*/
