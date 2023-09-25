@@ -149,7 +149,7 @@ h2 {
     font-style: normal;
     font-weight: 700;
     max-width: 800px;
-    text-align: left;
+    text-align: center;
 }
 
 .boton {
@@ -167,8 +167,6 @@ h2 {
     background-color: #6025B5;
     color: white;
 }
-
-
 
 .portadaPrincipal {
     display: flex;
@@ -224,7 +222,6 @@ h2 {
 main {
     justify-content: center;
 }
-
 
 .proyectosRecientes {
     display: flex;
@@ -284,15 +281,22 @@ main {
 
 /*Proyectos*/
 .iconoProyectos {
-    width: 142px;
-    height: 199px;
+    width: 80px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: end;
+    margin: 1px;
 }
 
 .tituloPrincipal {
     padding-top: 170px;
+}
+
+.mainPaginas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tituloProyecto1 {
@@ -792,8 +796,7 @@ fieldset {
         width: 90px;
         height: auto;
     }
-
-
+    
     .proyecto1 {
         display: none;
     }
@@ -926,6 +929,14 @@ fieldset {
         text-align: center;
     }
 
+    .iconoProyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 61px;
+        height: auto;
+    }
+
     .proyecto1 {
         display: none;
     }
@@ -940,6 +951,20 @@ fieldset {
 
     #carouselExampleInterval {
         display: flex;
+    }
+
+    .tituloPrincipal {
+        font-size: 44px;
+        max-width: 300px;
+        line-height: 50px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .parrafosPrincipales {
+        font-size: 22px;
+        max-width: 300px;
+        line-height: 30px;
     }
 
 }
