@@ -163,7 +163,7 @@ h2 {
     margin: 43px;
 }
 
-.boton:hover{
+.boton:hover {
     background-color: #6025B5;
     color: white;
 }
@@ -752,10 +752,17 @@ fieldset {
     }
 
     .tituloPrincipal {
-        font-size: 50px;
-        font-weight: 700;
+        font-size: 44px;
+        max-width: 300px;
+        line-height: 50px;
         font-style: normal;
         text-align: center;
+    }
+
+    .parrafosPrincipales {
+        font-size: 22px;
+        max-width: 300px;
+        line-height: 30px;
     }
 
     .col-9 {
@@ -782,6 +789,8 @@ fieldset {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 90px;
+        height: auto;
     }
 
 
@@ -888,7 +897,7 @@ fieldset {
     .row {
         display: flex;
         justify-content: flex-start;
-        
+
     }
 
     .imgProyectosRecientes {
