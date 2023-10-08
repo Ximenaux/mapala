@@ -1,3 +1,5 @@
+/* @import "./base/reset" */
+/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -20,110 +22,6 @@ hr {
   opacity: 100%;
 }
 
-a {
-  background-color: black;
-}
-
-/*Header*/
-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 70px;
-  align-items: center;
-}
-
-.logoMapala img {
-  width: 202px;
-}
-
-header nav {
-  background-color: black;
-}
-
-header nav ul {
-  display: flex;
-  padding: 0px;
-}
-
-header nav ul li {
-  margin: 0px 20px;
-}
-
-a {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  color: white;
-  text-decoration: none;
-}
-
-h3 {
-  font-weight: 600;
-}
-
-/*BARRA DE NAVEGACION bootstrap*/
-.header {
-  background-color: black;
-}
-
-.bg-body-tertiary {
-  --bs-bg-opacity: none;
-}
-
-.navbar {
-  width: 100%;
-  padding: 0px;
-}
-
-.container {
-  background-color: black;
-}
-
-#navbarNav {
-  justify-content: flex-end;
-  background-color: #010101;
-}
-
-.navbar-brand {
-  color: white;
-}
-
-.nav-link {
-  color: white;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.nav-link:hover {
-  color: #D529D1;
-}
-
-.navbar-toggler-icon {
-  color: white;
-}
-
-/*Inicio Portada*/
-#portada {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.tituloPrincipalHome {
-  max-width: 40rem;
-  display: flex;
-  text-align: center;
-  line-height: 70px;
-  justify-content: center;
-  font-size: 64px;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .tituloPrincipal {
   display: flex;
   justify-content: left;
@@ -135,15 +33,13 @@ h3 {
 
 h2 {
   padding: 50px 0px 26px 0px;
-}
-
-.parrafoMain {
-  font-size: 24px;
+  font-family: "Source Sans 3";
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  max-width: 544px;
-  text-align: center;
-  margin: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .parrafosPrincipales {
@@ -154,7 +50,93 @@ h2 {
   text-align: center;
 }
 
-.boton {
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+  align-items: center;
+}
+header .navbar {
+  background-color: black;
+  width: 100%;
+  padding: 0px;
+  --bs-bg-opacity: none;
+}
+header .navbar .container {
+  background-color: black;
+}
+header .navbar .container a {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+header .navbar .container #navbarNav {
+  justify-content: flex-end;
+  background-color: #010101;
+}
+header .navbar .container .nav-item {
+  margin: 0px 20px;
+}
+header .navbar .container .nav-link {
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+header .navbar .container .nav-link:hover {
+  color: #D529D1;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+/*Inicio Portada*/
+main {
+  justify-content: center;
+}
+main #portada {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #portada .portadaPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main #portada .portadaPrincipal .tituloPrincipalHome {
+  max-width: 40rem;
+  display: flex;
+  text-align: center;
+  line-height: 70px;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 700;
+  font-style: normal;
+}
+main #portada .portadaPrincipal .parrafoMain {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  max-width: 544px;
+  text-align: center;
+  margin: 32px;
+}
+main #portada .portadaPrincipal .boton {
   background-color: white;
   padding: 16px 50px;
   border-radius: 50px;
@@ -164,37 +146,25 @@ h2 {
   font-weight: 700;
   margin: 43px;
 }
-
-.boton:hover {
+main #portada .portadaPrincipal .boton:hover {
   background-color: #6025B5;
   color: white;
 }
-
-.portadaPrincipal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.imgClientesPortada {
+main #portada .portadaPrincipal .imgClientesPortada {
   width: 141px;
   height: 117px;
   position: absolute;
   top: 24%;
   right: -30%;
 }
-
-.imgCohetePortada {
+main #portada .portadaPrincipal .imgCohetePortada {
   width: 260px;
   height: 201px;
   position: absolute;
   top: 50%;
   right: 95%;
 }
-
-.imgForma1Portada {
+main #portada .portadaPrincipal .imgForma1Portada {
   width: 70.772px;
   height: 72.327px;
   transform: rotate(148.76deg);
@@ -202,75 +172,48 @@ h2 {
   top: -25%;
   right: 63%;
 }
-
-.imgForma2Portada {
+main #portada .portadaPrincipal .imgForma2Portada {
   width: 91px;
   height: 93px;
   position: absolute;
   top: 100%;
   right: 10%;
 }
-
-h2 {
-  font-family: Source Sans 3;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-main {
-  justify-content: center;
-}
-
-.proyectosRecientes {
+main #portada .proyectosRecientes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
   justify-content: center;
 }
-
-.proyectosRecientesTitulo {
+main #portada .proyectosRecientes .proyectosRecientesTitulo {
   grid-area: proyectostitulo;
 }
-
-.imgsProyectosRecientes {
+main #portada .proyectosRecientes .imgsProyectosRecientes {
   grid-area: imagenesproyectos;
 }
-
-.imgsProyectosRecientes {
+main #portada .proyectosRecientes .imgsProyectosRecientes {
   display: grid;
   grid-template-areas: "proyectostitulo proyectostitulo proyectostitulo" "imagenesproyectos imagenesproyectos imagenesproyectos";
   grid-template-columns: auto;
   grid-template-rows: 1fr auto;
-  align-items: center;
   display: flex;
+  align-items: center;
 }
-
-.imgProyectosRecientes {
+main #portada .proyectosRecientes .imgsProyectosRecientes .imgProyectosRecientes {
   padding: 2px;
   width: auto;
 }
-
-.col {
-  padding: 0px;
-}
-
-#clientesFelices {
+main #clientesFelices {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 55px;
 }
-
-.logosCentrosComerciales {
+main #clientesFelices .logosCentrosComerciales {
   display: flex;
 }
-
-.logosClientes {
+main #clientesFelices .logosClientes {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -280,7 +223,12 @@ main {
 }
 
 /*Proyectos*/
-.iconoProyectos {
+main .mainPaginas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .mainPaginas .iconoProyectos {
   width: 80px;
   height: auto;
   display: flex;
@@ -289,24 +237,78 @@ main {
   margin: 1px;
 }
 
-.mainPaginas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tituloProyecto1 {
+.container .tituloProyecto1 {
   padding: 70px 0px 5px 0px;
 }
-
-.proyecto1 {
+.container .proyecto1 {
   align-items: end;
+  /*Galeria Proyecto 1*/
+  display: grid;
+  grid-template-areas: "parque1_1 parque1_2 parque1_3 parque1_5" "parque1_1 parque1_4 parque1_4 parque1_5";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 10px;
+  margin: 0;
+  justify-content: center;
 }
-
-.descripcionProyectos {
+.container .proyecto1 .parque1_1 {
+  grid-area: parque1_1;
+}
+.container .proyecto1 .parque1_2 {
+  grid-area: parque1_2;
+}
+.container .proyecto1 .parque1_3 {
+  grid-area: parque1_3;
+}
+.container .proyecto1 .parque1_4 {
+  grid-area: parque1_4;
+}
+.container .proyecto1 .parque1_5 {
+  grid-area: parque1_5;
+}
+.container .tituloProyecto2 {
+  padding: 70px 0px 5px 0px;
+}
+.container .proyecto2 {
+  align-items: end;
+  /*Galeria Proyecto 2*/
+  display: grid;
+  grid-template-areas: "parque2_2 parque2_2 parque2_5 parque2_3" "parque2_1 parque2_4 parque2_4 parque2_3";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 5px;
+  column-gap: 10px;
+  margin: 0;
+  justify-content: center;
+}
+.container .proyecto2 .parque2_1 {
+  grid-area: parque2_1;
+}
+.container .proyecto2 .parque2_2 {
+  grid-area: parque2_2;
+}
+.container .proyecto2 .parque2_3 {
+  grid-area: parque2_3;
+}
+.container .proyecto2 .parque2_4 {
+  grid-area: parque2_4;
+}
+.container .proyecto2 .parque2_5 {
+  grid-area: parque2_5;
+}
+.container .descripcionProyectos {
   display: flex;
   justify-content: center;
   padding: 3px 0px 40px 0px;
+}
+
+#carouselExampleRide {
+  display: none;
+}
+
+#carouselExampleInterval {
+  display: none;
 }
 
 /*Servicios*/
@@ -352,78 +354,6 @@ main {
   flex-direction: column;
   width: auto;
   margin-right: 100px;
-}
-
-/*Galeria Proyecto 1*/
-.parque1_1 {
-  grid-area: parque1_1;
-}
-
-.parque1_2 {
-  grid-area: parque1_2;
-}
-
-.parque1_3 {
-  grid-area: parque1_3;
-}
-
-.parque1_4 {
-  grid-area: parque1_4;
-}
-
-.parque1_5 {
-  grid-area: parque1_5;
-}
-
-.proyecto1 {
-  display: grid;
-  grid-template-areas: "parque1_1 parque1_2 parque1_3 parque1_5" "parque1_1 parque1_4 parque1_4 parque1_5";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 5px;
-  column-gap: 10px;
-  margin: 0;
-  justify-content: center;
-}
-
-/*Galeria Proyecto 2*/
-.parque2_1 {
-  grid-area: parque2_1;
-}
-
-.parque2_2 {
-  grid-area: parque2_2;
-}
-
-.parque2_3 {
-  grid-area: parque2_3;
-}
-
-.parque2_4 {
-  grid-area: parque2_4;
-}
-
-.parque2_5 {
-  grid-area: parque2_5;
-}
-
-.proyecto2 {
-  display: grid;
-  grid-template-areas: "parque2_2 parque2_2 parque2_5 parque2_3" "parque2_1 parque2_4 parque2_4 parque2_3";
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  row-gap: 5px;
-  column-gap: 10px;
-  margin: 0;
-  justify-content: center;
-}
-
-#carouselExampleRide {
-  display: none;
-}
-
-#carouselExampleInterval {
-  display: none;
 }
 
 /*Nosotros*/
@@ -472,7 +402,7 @@ main {
 }
 
 .nombresFundadores {
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -481,7 +411,7 @@ main {
 }
 
 .ocupacionFundadores {
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -497,7 +427,7 @@ main {
 .datosEquipo {
   color: #D529D1;
   text-align: center;
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 200px;
   font-style: normal;
   font-weight: 700;
@@ -557,7 +487,7 @@ fieldset {
   width: 100%;
   color: #C7C7C7;
   text-align: left;
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -569,7 +499,7 @@ fieldset {
   width: 100%;
   color: #C7C7C7;
   text-align: left;
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -581,7 +511,7 @@ fieldset {
   width: 100%;
   color: #C7C7C7;
   text-align: left;
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -594,7 +524,7 @@ fieldset {
   width: 100%;
   color: #C7C7C7;
   text-align: left;
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -608,7 +538,7 @@ fieldset {
   border-radius: 50px;
   border-color: #6025B5;
   background: #6025B5;
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -626,14 +556,14 @@ fieldset {
 
 .titulosFooter {
   margin: 70px;
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
 }
 
 .textosFooter {
-  font-family: Source Sans 3;
+  font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -688,124 +618,6 @@ fieldset {
 }
 
 /*Media query*/
-@media screen and (max-width: 320px) {
-  .logoMapala {
-    width: 150px;
-  }
-  #portada {
-    padding: 150px 0px 80px 0px;
-  }
-  .imgsProyectosRecientes {
-    display: flex;
-    flex-direction: column;
-  }
-  h2 {
-    text-align: center;
-  }
-  .imgProyectosRecientes {
-    padding: 2px;
-    width: 100%;
-  }
-  .tituloPrincipalHome {
-    font-size: 48px;
-    max-width: 300px;
-    line-height: 50px;
-  }
-  .parrafoMain {
-    font-size: 22px;
-    max-width: 300px;
-  }
-  .imgClientesPortada {
-    display: none;
-  }
-  .imgForma1Portada {
-    width: 70.772px;
-    height: 72.327px;
-    transform: rotate(148.76deg);
-    position: absolute;
-    top: -15%;
-    right: 63%;
-  }
-  .imgForma2Portada {
-    width: 60px;
-    height: auto;
-    position: absolute;
-    top: 100%;
-    right: 30%;
-  }
-  .imgForma1Portada {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    top: -20%;
-    right: 60%;
-  }
-  .imgCohetePortada {
-    width: 120px;
-    height: auto;
-    position: absolute;
-    top: 65%;
-    right: 70%;
-  }
-  .hr {
-    margin-top: 8px;
-  }
-  .tituloFooter {
-    margin: 30px 0px 20px 0px;
-  }
-  .derechos {
-    text-align: center;
-  }
-  .lineaFooter {
-    margin-top: 40px;
-  }
-  .tituloPrincipal {
-    font-size: 48px;
-    max-width: 300px;
-    line-height: 50px;
-    font-style: normal;
-    text-align: center;
-  }
-  .parrafosPrincipales {
-    font-size: 22px;
-    max-width: 300px;
-    line-height: 30px;
-  }
-  .col-9 {
-    width: auto;
-  }
-  .col-7 {
-    width: auto;
-    text-align: center;
-  }
-  .parrafosPrincipales {
-    text-align: center;
-    font-size: 22px;
-  }
-  .col {
-    display: flex;
-    justify-content: center;
-  }
-  .iconoProyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90px;
-    height: auto;
-  }
-  .proyecto1 {
-    display: none;
-  }
-  .proyecto2 {
-    display: none;
-  }
-  #carouselExampleRide {
-    display: flex;
-  }
-  #carouselExampleInterval {
-    display: flex;
-  }
-}
 @media screen and (max-width: 768px) {
   .logoMapala {
     width: 150px;
