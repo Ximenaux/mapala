@@ -2,10 +2,7 @@ $colorFondo: black;
 $colorTextos: white;
 $colorSecundario: #D529D1;
 $colorHoverBotones: #6025B5;
-$fuentePrincipal: 'Source Sans 3'; 
-
-/* @import "./base/reset" */
-
+$fuentePrincipal: 'Source Sans 3';
 
 /* reset */
 * {
@@ -50,6 +47,10 @@ h2 {
     justify-content: center;
 }
 
+h3 {
+    font-weight: 600;
+}
+
 .parrafosPrincipales {
     font-size: 24px;
     font-style: normal;
@@ -58,7 +59,7 @@ h2 {
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: $colorTextos;
 }
@@ -89,7 +90,7 @@ header {
 
             #navbarNav {
                 justify-content: flex-end;
-                background-color: #010101;
+                background-color: $colorFondo;
             }
 
             .nav-item {
@@ -112,9 +113,7 @@ header {
     }
 }
 
-h3 {
-    font-weight: 600;
-}
+
 
 
 /*Inicio Portada*/
@@ -160,7 +159,7 @@ main {
                 background-color: $colorTextos;
                 padding: 16px 50px;
                 border-radius: 50px;
-                color: #010101;
+                color: $colorFondo;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
@@ -205,49 +204,48 @@ main {
                 right: 10%;
             }
         }
+    }
 
-        .proyectosRecientes {
+    .proyectosRecientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+
+        .proyectosRecientesTitulo {
+            grid-area: proyectostitulo;
+        }
+
+        .imgsProyectosRecientes {
+            grid-area: imagenesproyectos;
+            display: grid;
+            grid-template-areas:
+                "proyectostitulo proyectostitulo proyectostitulo"
+                "imagenesproyectos imagenesproyectos imagenesproyectos";
+            grid-template-columns: auto;
+            grid-template-rows: 1fr auto;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: auto;
-            justify-content: center;
+            align-items: center;
 
-            .proyectosRecientesTitulo {
-                grid-area: proyectostitulo;
-            }
-
-            .imgsProyectosRecientes {
-                grid-area: imagenesproyectos;
-            }
-
-            .imgsProyectosRecientes {
-                display: grid;
-                grid-template-areas:
-                    "proyectostitulo proyectostitulo proyectostitulo"
-                    "imagenesproyectos imagenesproyectos imagenesproyectos";
-                grid-template-columns: auto;
-                grid-template-rows: 1fr auto;
-                display: flex;
-                align-items: center;
-
-                .imgProyectosRecientes {
-                    padding: 2px;
-                    width: auto;
-                }
+            .imgProyectosRecientes {
+                padding: 2px;
+                width: auto;
             }
         }
     }
+
     #clientesFelices {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 55px;
-    
+
         .logosCentrosComerciales {
             display: flex;
         }
-    
+
         .logosClientes {
             display: flex;
             flex-direction: row;
@@ -283,6 +281,14 @@ main {
 .container {
     .tituloProyecto1 {
         padding: 70px 0px 5px 0px;
+    }
+
+    #carouselExampleRide {
+        display: none;
+    }
+
+    #carouselExampleInterval {
+        display: none;
     }
 
     .proyecto1 {
@@ -368,251 +374,292 @@ main {
     }
 }
 
-#carouselExampleRide {
-    display: none;
-}
-
-#carouselExampleInterval {
-    display: none;
-}
 
 
 
 /*Servicios*/
+main {
+    .seccionServicios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
 
-.valores {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
+        .imgServicios {
+            width: 500px;
+            height: auto;
+            margin: 120px;
+        }
+
+        .cardServicios {
+            .divCardServicios {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: auto;
+                margin-right: 100px;
+
+                .boton {
+                    background-color: $colorTextos;
+                    padding: 16px 50px;
+                    border-radius: 50px;
+                    color: $colorFondo;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    margin: 43px;
+
+                    &:hover {
+                        background-color: $colorHoverBotones;
+                        color: $colorTextos;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .valores {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+
+        .divValores {
+            justify-content: center;
+            margin: 32px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            .imgvalores {
+                width: auto;
+                height: 180px;
+            }
+        }
+    }
 }
 
-.imgvalores {
-    width: auto;
-    height: 180px;
-}
 
-.divValores {
-    justify-content: center;
-    margin: 32px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.seccionServicios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-}
-
-.imgServicios {
-    width: 500px;
-    height: auto;
-    margin: 120px;
-}
-
-.divCardServicios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-    margin-right: 100px;
-}
 
 
 /*Nosotros*/
-.seccionNosotros {
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+body {
+    main {
+        .seccionNosotros {
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+
+            .fotosFundadores {
+                display: flex;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+
+                .fundadores {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 186px;
+                    height: 105px;
+                    padding: 16px 3px;
+                    text-align: center;
+                    border-radius: 60px;
+                    background: $colorSecundario;
+                    position: relative;
+                    top: 50px;
+                    right: -75px;
+
+                    .nombresFundadores {
+                        font-family: $fuentePrincipal;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        background: none;
+                        margin: -5px;
+                    }
+
+                    .ocupacionFundadores {
+                        font-family: $fuentePrincipal;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        background: none;
+                    }
+
+                }
+
+                .fotoFundador {
+                    margin: 24px;
+                    width: 293px;
+                    height: 473px;
+                }
+            }
+        }
+
+        #datoscuriosos {
+            .tituloUs {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    #datosCuriosos {
+        .datosEspecificos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .datosEquipo {
+                color: $colorSecundario;
+                text-align: center;
+                font-family: $fuentePrincipal;
+                font-size: 200px;
+                font-style: normal;
+                font-weight: 700;
+                padding-right: 0px;
+            }
+
+            .datosExperiencia {
+                color: #FFDE3E;
+                text-align: center;
+                font-size: 200px;
+                font-style: normal;
+                font-weight: 700;
+                padding-inline: 108px;
+            }
+
+            .datosEvento {
+                color: #FF793E;
+                text-align: center;
+                font-size: 200px;
+                font-style: normal;
+                font-weight: 700;
+                padding-left: 0px;
+            }
+
+            .textoDatosEquipo {
+                color: #FFF;
+                text-align: center;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 35px;
+            }
+        }
+
+    }
 }
 
-.seccionNosotros div {
-    margin: 0px;
-}
-
-.fotoFundador {
-    width: 293px;
-    height: 473px;
-}
-
-.tituloUs {
-    justify-content: center;
-    text-align: center;
-}
-
-.fotosFundadores {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-}
-
-.fundadores {
-    width: 186px;
-    height: 105px;
-    padding: 16px 3px;
-    justify-content: center;
-    text-align: center;
-    border-radius: 60px;
-    background: $colorSecundario;
-    display: flex;
-    display: inline-block;
-    position: relative;
-    top: 50px;
-    right: -50px;
-    flex-direction: row;
-}
-
-.nombresFundadores {
-    font-family: $fuentePrincipal;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    background: none;
-    margin: -5px;
-}
-
-.ocupacionFundadores {
-    font-family: $fuentePrincipal;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    background: none;
-}
-
-.datosEspecificos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.datosEquipo {
-    color: $colorSecundario;
-    text-align: center;
-    font-family: $fuentePrincipal;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 700;
-    padding-right: 0px;
-}
-
-.datosExperiencia {
-    color: #FFDE3E;
-    text-align: center;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 700;
-    padding-inline: 108px;
-}
-
-.datosEvento {
-    color: #FF793E;
-    text-align: center;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 700;
-    padding-left: 0px;
-}
-
-.textoDatosEquipo {
-    color: #FFF;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 35px;
-}
 
 /*Contacto*/
-fieldset {
-    width: 418px;
-    height: 524px;
-    border-radius: 30px;
-    background: $colorTextos;
-    padding: 20px;
-    border: none;
+
+body{
+    main{
+        section{
+            form{
+                fieldset {
+                    width: 418px;
+                    height: 560px;
+                    border-radius: 30px;
+                    background: $colorTextos;
+                    padding: 20px;
+                    border: none;
+
+                    .formulario {
+                        width: 331px;
+                        padding: 9px 24px;
+                        align-items: center;
+                        border-radius: 24px;
+                        border: 1px solid $colorSecundario;
+                        background-color: $colorTextos;
+                        margin: 32px;
+
+                        #nombre {
+                            background: none;
+                            border: none;
+                            width: 100%;
+                            color: #C7C7C7;
+                            text-align: left;
+                            font-family: $fuentePrincipal;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                        }
+                        
+                        #email {
+                            background: none;
+                            border: none;
+                            width: 100%;
+                            color: #C7C7C7;
+                            text-align: left;
+                            font-family: $fuentePrincipal;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                        }
+                        
+                        #asunto {
+                            background: none;
+                            border: none;
+                            width: 100%;
+                            color: #C7C7C7;
+                            text-align: left;
+                            font-family: $fuentePrincipal;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                        }
+                        
+                        #mensaje {
+                            background: none;
+                            border: none;
+                            height: 97px;
+                            width: 100%;
+                            color: #C7C7C7;
+                            text-align: left;
+                            font-family: $fuentePrincipal;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                        } 
+                    }
+                    .botonContacto {
+                        width: 331px;
+                        padding: 16px 60px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px;
+                        border-color: $colorHoverBotones;
+                        background: $colorHoverBotones;
+                        font-family: $fuentePrincipal;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        border: none;
+                    }
+                    
+                }
+            }
+        }
+
+    }
 }
 
-.formulario {
-    width: 331px;
-    padding: 9px 24px;
-    align-items: center;
-    border-radius: 24px;
-    border: 1px solid $colorSecundario;
-    background-color: $colorTextos;
-    margin: 32px;
-}
 
-#nombre {
-    background: none;
-    border: none;
-    width: 100%;
-    color: #C7C7C7;
-    text-align: left;
-    font-family: $fuentePrincipal;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
 
-#email {
-    background: none;
-    border: none;
-    width: 100%;
-    color: #C7C7C7;
-    text-align: left;
-    font-family: $fuentePrincipal;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
 
-#asunto {
-    background: none;
-    border: none;
-    width: 100%;
-    color: #C7C7C7;
-    text-align: left;
-    font-family: $fuentePrincipal;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
 
-#mensaje {
-    background: none;
-    border: none;
-    height: 97px;
-    width: 100%;
-    color: #C7C7C7;
-    text-align: left;
-    font-family: $fuentePrincipal;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
 
-.botonContacto {
-    width: 331px;
-    padding: 16px 60px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    border-color: $colorHoverBotones;
-    background: $colorHoverBotones;
-    font-family: $fuentePrincipal;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    border: none;
-}
 
 /*Footer*/
 
