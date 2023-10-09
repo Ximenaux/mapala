@@ -81,6 +81,14 @@ header .navbar .container a {
   color: white;
   text-decoration: none;
 }
+header .navbar .container a .logoMapala {
+  width: 200px;
+}
+@media screen and (max-width: 768px) {
+  header .navbar .container a .logoMapala {
+    width: 150px;
+  }
+}
 header .navbar .container #navbarNav {
   justify-content: flex-end;
   background-color: black;
@@ -110,6 +118,11 @@ main #portada {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  main #portada #portada {
+    padding: 150px 0px 80px 0px;
+  }
+}
 main #portada .portadaPrincipal {
   display: flex;
   flex-direction: column;
@@ -127,6 +140,13 @@ main #portada .portadaPrincipal .tituloPrincipalHome {
   font-weight: 700;
   font-style: normal;
 }
+@media screen and (max-width: 768px) {
+  main #portada .portadaPrincipal .tituloPrincipalHome {
+    font-size: 48px;
+    max-width: 470px;
+    line-height: 50px;
+  }
+}
 main #portada .portadaPrincipal .parrafoMain {
   font-size: 24px;
   font-style: normal;
@@ -134,6 +154,12 @@ main #portada .portadaPrincipal .parrafoMain {
   max-width: 544px;
   text-align: center;
   margin: 32px;
+}
+@media screen and (max-width: 768px) {
+  main #portada .portadaPrincipal .parrafoMain {
+    font-size: 22px;
+    max-width: 380px;
+  }
 }
 main #portada .portadaPrincipal .boton {
   background-color: white;
@@ -178,6 +204,44 @@ main #portada .portadaPrincipal .imgForma2Portada {
   top: 100%;
   right: 10%;
 }
+@media screen and (max-width: 768px) {
+  main #portada .portadaPrincipal .imgClientesPortada {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    right: 1%;
+  }
+  main #portada .portadaPrincipal .imgForma1Portada {
+    width: 70.772px;
+    height: 72.327px;
+    transform: rotate(148.76deg);
+    position: absolute;
+    top: -15%;
+    right: 63%;
+  }
+  main #portada .portadaPrincipal .imgForma2Portada {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    right: 30%;
+  }
+  main #portada .portadaPrincipal .imgForma1Portada {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: -20%;
+    right: 60%;
+  }
+  main #portada .portadaPrincipal .imgCohetePortada {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 65%;
+    right: 85%;
+  }
+}
 main .proyectosRecientes {
   display: flex;
   flex-direction: row;
@@ -185,6 +249,12 @@ main .proyectosRecientes {
   width: auto;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main .proyectosRecientes .imgsProyectosRecientes {
+    display: flex;
+    flex-direction: column;
+  }
 }
 main .proyectosRecientes .proyectosRecientesTitulo {
   grid-area: proyectostitulo;
@@ -201,6 +271,14 @@ main .proyectosRecientes .imgsProyectosRecientes {
 main .proyectosRecientes .imgsProyectosRecientes .imgProyectosRecientes {
   padding: 2px;
   width: auto;
+}
+@media screen and (max-width: 768px) {
+  main .proyectosRecientes .imgsProyectosRecientes .imgProyectosRecientes {
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 main #clientesFelices {
   display: flex;
@@ -271,6 +349,14 @@ main .mainPaginas .iconoProyectos {
 .container .proyecto1 .parque1_5 {
   grid-area: parque1_5;
 }
+@media screen and (max-width: 768px) {
+  .container .proyecto1 {
+    display: none;
+  }
+  .container #carouselExampleRide {
+    display: flex;
+  }
+}
 .container .tituloProyecto2 {
   padding: 70px 0px 5px 0px;
 }
@@ -300,6 +386,14 @@ main .mainPaginas .iconoProyectos {
 }
 .container .proyecto2 .parque2_5 {
   grid-area: parque2_5;
+}
+@media screen and (max-width: 768px) {
+  .container .proyecto2 {
+    display: none;
+  }
+  .container #carouselExampleInterval {
+    display: flex;
+  }
 }
 .container .descripcionProyectos {
   display: flex;
@@ -454,15 +548,22 @@ body #datosCuriosos .datosEspecificos .textoDatosEquipo {
 }
 
 /*Contacto*/
-body main section form fieldset {
+main section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section form fieldset {
   width: 418px;
   height: 560px;
   border-radius: 30px;
   background: white;
   padding: 20px;
   border: none;
+  margin: 59px;
 }
-body main section form fieldset .formulario {
+main section form fieldset .formulario {
   width: 331px;
   padding: 9px 24px;
   align-items: center;
@@ -471,7 +572,7 @@ body main section form fieldset .formulario {
   background-color: white;
   margin: 32px;
 }
-body main section form fieldset .formulario #nombre {
+main section form fieldset .formulario #nombre {
   background: none;
   border: none;
   width: 100%;
@@ -482,7 +583,7 @@ body main section form fieldset .formulario #nombre {
   font-style: normal;
   font-weight: 700;
 }
-body main section form fieldset .formulario #email {
+main section form fieldset .formulario #email {
   background: none;
   border: none;
   width: 100%;
@@ -493,7 +594,7 @@ body main section form fieldset .formulario #email {
   font-style: normal;
   font-weight: 700;
 }
-body main section form fieldset .formulario #asunto {
+main section form fieldset .formulario #asunto {
   background: none;
   border: none;
   width: 100%;
@@ -504,7 +605,7 @@ body main section form fieldset .formulario #asunto {
   font-style: normal;
   font-weight: 700;
 }
-body main section form fieldset .formulario #mensaje {
+main section form fieldset .formulario #mensaje {
   background: none;
   border: none;
   height: 97px;
@@ -515,8 +616,9 @@ body main section form fieldset .formulario #mensaje {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  align-items: center;
 }
-body main section form fieldset .botonContacto {
+main section form .botonContacto {
   width: 331px;
   padding: 16px 60px;
   justify-content: center;
@@ -530,25 +632,37 @@ body main section form fieldset .botonContacto {
   font-weight: 700;
   border: none;
 }
+main section form .botonContacto:hover {
+  background-color: white;
+  color: #6025B5;
+}
 
 /*Footer*/
-.footerA {
+.container-fluid {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.container-fluid .footerA {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   flex-wrap: wrap;
 }
-
-.titulosFooter {
+@media screen and (max-width: 768px) {
+  .container-fluid .footerA {
+    text-align: center;
+  }
+}
+.container-fluid .titulosFooter {
   margin: 70px;
   font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
 }
-
-.textosFooter {
+.container-fluid .titulosFooter .textosFooter {
   font-family: "Source Sans 3";
   font-size: 20px;
   font-style: normal;
@@ -559,14 +673,28 @@ body main section form fieldset .botonContacto {
   justify-content: left;
   padding: 0px;
 }
-
-.lineaFooter {
+.container-fluid .titulosFooter .redesSociales {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.container-fluid .titulosFooter .redesSociales div .logoYoutube {
+  margin: 10px 0px 10px 0px;
+}
+.container-fluid .titulosFooter .redesSociales div .logoInstagram {
+  margin: 10px 0px 10px 0px;
+}
+@media screen and (max-width: 768px) {
+  .container-fluid .titulosFooter {
+    margin: 30px;
+  }
+}
+.container-fluid .lineaFooter {
   width: 10%;
   margin-top: -34px;
   margin-left: 45%;
 }
-
-.derechosFooter {
+.container-fluid .derechosFooter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -577,40 +705,8 @@ body main section form fieldset .botonContacto {
   font-weight: 700;
 }
 
-.manoUno {
-  width: 178.695px;
-  height: 380.877px;
-  transform: rotate(-52.798deg);
-}
-
-.redesSociales {
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-}
-
-.logoYoutube {
-  margin: 10px 0px 10px 0px;
-}
-
-.logoInstagram {
-  margin: 10px 0px 10px 0px;
-}
-
-.container-fluid {
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-}
-
 /*Media query*/
 @media screen and (max-width: 768px) {
-  .logoMapala {
-    width: 150px;
-  }
-  #portada {
-    padding: 150px 0px 80px 0px;
-  }
   .mainPaginas {
     display: flex;
     flex-direction: column;
@@ -619,97 +715,8 @@ body main section form fieldset .botonContacto {
   h2 {
     text-align: center;
   }
-  .imgsProyectosRecientes {
-    display: flex;
-    flex-direction: column;
-  }
-  .imgProyectosRecientes {
-    padding: 2px;
-    width: 100%;
-  }
-  .tituloPrincipalHome {
-    font-size: 48px;
-    max-width: 470px;
-    line-height: 50px;
-  }
-  .parrafoMain {
-    font-size: 22px;
-    max-width: 380px;
-  }
-  .imgClientesPortada {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    top: 55%;
-    right: 1%;
-  }
-  .imgForma1Portada {
-    width: 70.772px;
-    height: 72.327px;
-    transform: rotate(148.76deg);
-    position: absolute;
-    top: -15%;
-    right: 63%;
-  }
-  .imgForma2Portada {
-    width: 60px;
-    height: auto;
-    position: absolute;
-    top: 100%;
-    right: 30%;
-  }
-  .imgForma1Portada {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    top: -20%;
-    right: 60%;
-  }
-  .imgCohetePortada {
-    width: 120px;
-    height: auto;
-    position: absolute;
-    top: 65%;
-    right: 85%;
-  }
   .hr {
     margin-top: 8px;
-  }
-  .imgProyectosRecientes {
-    display: flex;
-    flex-direction: column;
-  }
-  .footerA {
-    text-align: center;
-  }
-  .tituloFooter {
-    font-weight: 500;
-    margin: 30px 0px 20px 0px;
-  }
-  .titulosFooter {
-    margin: 30px;
-  }
-  .derechos {
-    text-align: center;
-  }
-  .iconoProyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 61px;
-    height: auto;
-  }
-  .proyecto1 {
-    display: none;
-  }
-  .proyecto2 {
-    display: none;
-  }
-  #carouselExampleRide {
-    display: flex;
-  }
-  #carouselExampleInterval {
-    display: flex;
   }
   .tituloPrincipal {
     font-size: 48px;
@@ -722,6 +729,13 @@ body main section form fieldset .botonContacto {
     font-size: 22px;
     max-width: 300px;
     line-height: 30px;
+  }
+  .iconoProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 61px;
+    height: auto;
   }
 }
 
