@@ -170,10 +170,12 @@ main #portada .portadaPrincipal .boton {
   font-style: normal;
   font-weight: 700;
   margin: 43px;
+  transition: background-color 1s, transform 1s;
 }
 main #portada .portadaPrincipal .boton:hover {
   background-color: #6025B5;
   color: white;
+  transform: translate(0px, -5px);
 }
 main #portada .portadaPrincipal .imgClientesPortada {
   width: 141px;
@@ -181,6 +183,10 @@ main #portada .portadaPrincipal .imgClientesPortada {
   position: absolute;
   top: 24%;
   right: -30%;
+  transition: transform 1s;
+}
+main #portada .portadaPrincipal .imgClientesPortada:hover {
+  transform: translate(-5px, -15px);
 }
 main #portada .portadaPrincipal .imgCohetePortada {
   width: 260px;
@@ -188,6 +194,10 @@ main #portada .portadaPrincipal .imgCohetePortada {
   position: absolute;
   top: 50%;
   right: 95%;
+  transition: transform 1s;
+}
+main #portada .portadaPrincipal .imgCohetePortada:hover {
+  transform: translate(20px, -15px);
 }
 main #portada .portadaPrincipal .imgForma1Portada {
   width: 70.772px;
@@ -196,6 +206,10 @@ main #portada .portadaPrincipal .imgForma1Portada {
   position: absolute;
   top: -25%;
   right: 63%;
+  transition: transform 1s;
+}
+main #portada .portadaPrincipal .imgForma1Portada:hover {
+  transform: translate(-5px, -15px);
 }
 main #portada .portadaPrincipal .imgForma2Portada {
   width: 91px;
@@ -203,6 +217,10 @@ main #portada .portadaPrincipal .imgForma2Portada {
   position: absolute;
   top: 100%;
   right: 10%;
+  transition: transform 1s;
+}
+main #portada .portadaPrincipal .imgForma2Portada:hover {
+  transform: translate(10px, -25px);
 }
 @media screen and (max-width: 768px) {
   main #portada .portadaPrincipal .imgClientesPortada {
@@ -289,6 +307,12 @@ main #clientesFelices {
 main #clientesFelices .logosCentrosComerciales {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  main #clientesFelices .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main #clientesFelices .logosClientes {
   display: flex;
   flex-direction: row;
@@ -296,6 +320,15 @@ main #clientesFelices .logosClientes {
   width: 97px;
   height: 97px;
   margin: 10px;
+  transition: transform 1s;
+}
+main #clientesFelices .logosClientes:hover {
+  transform: translate(0px, -35px);
+}
+@media screen and (max-width: 768px) {
+  main #clientesFelices .logosClientes .logocc {
+    width: 100px;
+  }
 }
 
 /*Proyectos*/
@@ -416,9 +449,9 @@ main .seccionServicios div .imgServicios {
   margin: 120px;
 }
 @media screen and (max-width: 768px) {
-  main .seccionServicios .imgServicios {
-    margin: 0px;
-    width: 200px;
+  main .seccionServicios div .imgServicios {
+    margin: 100px 0px 0px 0px;
+    width: 280px;
     height: auto;
   }
 }
@@ -439,10 +472,17 @@ main .seccionServicios .cardServicios .divCardServicios .boton {
   font-style: normal;
   font-weight: 700;
   margin: 43px;
+  transition: background-color 1s, transform 1s;
 }
 main .seccionServicios .cardServicios .divCardServicios .boton:hover {
   background-color: #6025B5;
   color: white;
+  transform: translate(0px, -5px);
+}
+@media screen and (max-width: 768px) {
+  main .seccionServicios .cardServicios .divCardServicios {
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   main .seccionServicios .cardServicios {
@@ -474,9 +514,21 @@ main .valores .divValores .imgvalores {
   height: 180px;
 }
 @media screen and (max-width: 768px) {
+  main .valores .divValores .imgvalores {
+    width: auto;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .valores .divValores {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
   main .valores {
     display: flex;
     flex-direction: column;
+    padding-top: 0px;
   }
 }
 
@@ -658,6 +710,19 @@ main section form fieldset .formulario #mensaje {
   font-weight: 700;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  main section form fieldset .formulario {
+    width: 246px;
+    padding: 4px 9px 0px 24px;
+    margin: 20px 0px 30px 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main section form fieldset {
+    width: 300px;
+    height: 500px;
+  }
+}
 main section form .botonContacto {
   width: 331px;
   padding: 16px 60px;
@@ -666,6 +731,7 @@ main section form .botonContacto {
   border-radius: 50px;
   border-color: #6025B5;
   background: #6025B5;
+  transition: background-color 1s, transform 1s;
   font-family: "Source Sans 3";
   font-size: 24px;
   font-style: normal;
@@ -675,6 +741,12 @@ main section form .botonContacto {
 main section form .botonContacto:hover {
   background-color: white;
   color: #6025B5;
+  transform: translate(0px, -5px);
+}
+@media screen and (max-width: 768px) {
+  main section form .botonContacto {
+    width: 270px;
+  }
 }
 
 /*Footer*/
@@ -780,6 +852,9 @@ main section form .botonContacto:hover {
   .seccionNosotros {
     display: flex;
     flex-direction: column;
+  }
+  .derechos {
+    text-align: center;
   }
 }
 

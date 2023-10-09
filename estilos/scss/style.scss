@@ -193,10 +193,12 @@ main {
                 font-style: normal;
                 font-weight: 700;
                 margin: 43px;
+                transition: background-color 1s, transform 1s;
 
                 &:hover {
                     background-color: $colorHoverBotones;
                     color: $colorTextos;
+                    transform: translate(0px, -5px);
                 }
             }
 
@@ -206,7 +208,13 @@ main {
                 position: absolute;
                 top: 24%;
                 right: -30%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(-5px, -15px);
+                }
             }
+
 
             .imgCohetePortada {
                 width: 260px;
@@ -214,6 +222,11 @@ main {
                 position: absolute;
                 top: 50%;
                 right: 95%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(20px, -15px);
+                }
             }
 
             .imgForma1Portada {
@@ -223,6 +236,11 @@ main {
                 position: absolute;
                 top: -25%;
                 right: 63%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(-5px, -15px);
+                }
             }
 
             .imgForma2Portada {
@@ -231,6 +249,11 @@ main {
                 position: absolute;
                 top: 100%;
                 right: 10%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(10px, -25px);
+                }
             }
 
             @media screen and (max-width:768px) {
@@ -335,6 +358,13 @@ main {
             display: flex;
         }
 
+        @media screen and (max-width:768px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
         .logosClientes {
             display: flex;
             flex-direction: row;
@@ -342,6 +372,17 @@ main {
             width: 97px;
             height: 97px;
             margin: 10px;
+            transition: transform 1s;
+
+            &:hover {
+                transform: translate(0px, -35px);
+            }
+
+            @media screen and (max-width:768px) {
+                .logocc {
+                    width: 100px;
+                }
+            }
         }
     }
 }
@@ -502,13 +543,13 @@ main {
                 height: auto;
                 margin: 120px;
             }
-        }
 
-        @media screen and (max-width:768px) {
-            .imgServicios {
-                margin: 0px;
-                width: 200px;
-                height: auto;
+            @media screen and (max-width:768px) {
+                .imgServicios {
+                    margin: 100px 0px 0px 0px;
+                    width: 280px;
+                    height: auto;
+                }
             }
         }
 
@@ -530,11 +571,19 @@ main {
                     font-style: normal;
                     font-weight: 700;
                     margin: 43px;
+                    transition: background-color 1s, transform 1s;
 
                     &:hover {
                         background-color: $colorHoverBotones;
                         color: $colorTextos;
+                        transform: translate(0px, -5px);
                     }
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .divCardServicios {
+                    margin-right: 0px;
                 }
             }
         }
@@ -543,7 +592,6 @@ main {
             .cardServicios {
                 margin: 0px;
                 display: flex;
-
             }
         }
     }
@@ -572,6 +620,19 @@ main {
                 width: auto;
                 height: 180px;
             }
+
+            @media screen and (max-width:768px) {
+                .imgvalores {
+                    width: auto;
+                    height: 150px;
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .divValores {
+                margin: 15px;
+            }
         }
     }
 
@@ -579,6 +640,7 @@ main {
         .valores {
             display: flex;
             flex-direction: column;
+            padding-top: 0px;
         }
     }
 }
@@ -793,6 +855,22 @@ main {
                         align-items: center;
                     }
                 }
+
+                @media screen and (max-width:768px) {
+                    .formulario {
+                        width: 246px;
+                        padding: 4px 9px 0px 24px;
+                        margin: 20px 0px 30px 8px;
+                    }
+                }
+
+            }
+
+            @media screen and (max-width:768px) {
+                fieldset {
+                    width: 300px;
+                    height: 500px;
+                }
             }
 
             .botonContacto {
@@ -803,6 +881,7 @@ main {
                 border-radius: 50px;
                 border-color: $colorHoverBotones;
                 background: $colorHoverBotones;
+                transition: background-color 1s, transform 1s;
                 font-family: $fuentePrincipal;
                 font-size: 24px;
                 font-style: normal;
@@ -812,6 +891,13 @@ main {
                 &:hover {
                     background-color: $colorTextos;
                     color: $colorHoverBotones;
+                    transform: translate(0px, -5px);
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .botonContacto {
+                    width: 270px;
                 }
             }
         }
@@ -949,5 +1035,7 @@ main {
         flex-direction: column;
     }
 
-
+    .derechos {
+        text-align: center;
+    }
 }
