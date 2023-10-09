@@ -410,10 +410,17 @@ main .seccionServicios {
   text-align: center;
   align-items: center;
 }
-main .seccionServicios .imgServicios {
+main .seccionServicios div .imgServicios {
   width: 500px;
   height: auto;
   margin: 120px;
+}
+@media screen and (max-width: 768px) {
+  main .seccionServicios .imgServicios {
+    margin: 0px;
+    width: 200px;
+    height: auto;
+  }
 }
 main .seccionServicios .cardServicios .divCardServicios {
   display: flex;
@@ -437,6 +444,18 @@ main .seccionServicios .cardServicios .divCardServicios .boton:hover {
   background-color: #6025B5;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  main .seccionServicios .cardServicios {
+    margin: 0px;
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .seccionServicios {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main .valores {
   display: flex;
   flex-direction: row;
@@ -453,6 +472,12 @@ main .valores .divValores {
 main .valores .divValores .imgvalores {
   width: auto;
   height: 180px;
+}
+@media screen and (max-width: 768px) {
+  main .valores {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*Nosotros*/
@@ -504,6 +529,16 @@ body main .seccionNosotros .fotosFundadores .fotoFundador {
   width: 293px;
   height: 473px;
 }
+@media screen and (max-width: 768px) {
+  body main .seccionNosotros .fotosFundadores {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main .seccionNosotros {
+    height: 2500px;
+  }
+}
 body main #datoscuriosos .tituloUs {
   justify-content: center;
   text-align: center;
@@ -545,6 +580,11 @@ body #datosCuriosos .datosEspecificos .textoDatosEquipo {
   font-style: normal;
   font-weight: 700;
   line-height: 35px;
+}
+@media screen and (max-width: 768px) {
+  body #datosCuriosos .datosEspecificos {
+    flex-direction: column;
+  }
 }
 
 /*Contacto*/
@@ -736,6 +776,10 @@ main section form .botonContacto:hover {
     justify-content: center;
     width: 61px;
     height: auto;
+  }
+  .seccionNosotros {
+    display: flex;
+    flex-direction: column;
   }
 }
 

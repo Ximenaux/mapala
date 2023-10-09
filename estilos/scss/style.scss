@@ -496,10 +496,20 @@ main {
         text-align: center;
         align-items: center;
 
-        .imgServicios {
-            width: 500px;
-            height: auto;
-            margin: 120px;
+        div {
+            .imgServicios {
+                width: 500px;
+                height: auto;
+                margin: 120px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .imgServicios {
+                margin: 0px;
+                width: 200px;
+                height: auto;
+            }
         }
 
         .cardServicios {
@@ -529,6 +539,20 @@ main {
             }
         }
 
+        @media screen and (max-width:768px) {
+            .cardServicios {
+                margin: 0px;
+                display: flex;
+
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .seccionServicios {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .valores {
@@ -550,9 +574,14 @@ main {
             }
         }
     }
+
+    @media screen and (max-width:768px) {
+        .valores {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
-
-
 
 
 /*Nosotros*/
@@ -612,6 +641,18 @@ body {
                     height: 473px;
                 }
             }
+
+            @media screen and (max-width:768px) {
+                .fotosFundadores {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .seccionNosotros {
+                height: 2500px;
+            }
         }
 
         #datoscuriosos {
@@ -666,6 +707,11 @@ body {
             }
         }
 
+        @media screen and (max-width:768px) {
+            .datosEspecificos {
+                flex-direction: column;
+            }
+        }
     }
 }
 
@@ -854,7 +900,7 @@ main {
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        
+
     }
 }
 
@@ -897,5 +943,11 @@ main {
         width: 61px;
         height: auto;
     }
+
+    .seccionNosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }
