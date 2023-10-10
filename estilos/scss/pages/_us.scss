@@ -1,0 +1,136 @@
+body {
+    main {
+        .seccionNosotros {
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+
+            .fotosFundadores {
+                display: flex;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+
+                .divFundadores{
+                    transition: transform 1s;
+
+                &:hover {
+                    transform: translate(0px, -35px);
+                }
+                }
+
+                .fundadores {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 186px;
+                    height: 105px;
+                    padding: 16px 3px;
+                    text-align: center;
+                    border-radius: 60px;
+                    background: $colorSecundario;
+                    position: relative;
+                    top: 50px;
+                    right: -75px;
+
+                    .nombresFundadores {
+                        font-family: $fuentePrincipal;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        background: none;
+                        margin: -5px;
+                    }
+
+                    .ocupacionFundadores {
+                        font-family: $fuentePrincipal;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        background: none;
+                    }
+
+                }
+
+                .fotoFundador {
+                    margin: 24px;
+                    width: 293px;
+                    height: 473px;
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .fotosFundadores {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .seccionNosotros {
+                height: 2500px;
+            }
+        }
+
+        #datoscuriosos {
+            .tituloUs {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    #datosCuriosos {
+        .datosEspecificos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .datosEquipo {
+                color: $colorSecundario;
+                text-align: center;
+                font-family: $fuentePrincipal;
+                font-size: 200px;
+                font-style: normal;
+                font-weight: 700;
+                padding-right: 0px;
+            }
+
+            .datosExperiencia {
+                color: #FFDE3E;
+                text-align: center;
+                font-size: 200px;
+                font-style: normal;
+                font-weight: 700;
+                padding-inline: 108px;
+            }
+
+            .datosEvento {
+                color: #FF793E;
+                text-align: center;
+                font-size: 200px;
+                font-style: normal;
+                font-weight: 700;
+                padding-left: 0px;
+            }
+
+            .textoDatosEquipo {
+                color: #FFF;
+                text-align: center;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 35px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .datosEspecificos {
+                flex-direction: column;
+            }
+        }
+    }
+}

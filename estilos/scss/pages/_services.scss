@@ -1,0 +1,122 @@
+main {
+    .seccionServicios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+
+        div {
+            .imgServicios {
+                width: 500px;
+                height: auto;
+                margin: 120px;
+            }
+
+            @media screen and (max-width:768px) {
+                .imgServicios {
+                    margin: 100px 0px 0px 0px;
+                    width: 280px;
+                    height: auto;
+                }
+            }
+        }
+
+        .cardServicios {
+            .divCardServicios {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: auto;
+                margin-right: 100px;
+
+                .boton {
+                    background-color: $colorTextos;
+                    padding: 16px 50px;
+                    border-radius: 50px;
+                    color: $colorFondo;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    margin: 43px;
+                    transition: background-color 1s, transform 1s;
+
+                    &:hover {
+                        background-color: $colorHoverBotones;
+                        color: $colorTextos;
+                        transform: translate(0px, -5px);
+                    }
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .divCardServicios {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .cardServicios {
+                margin: 0px;
+                display: flex;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .seccionServicios {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .valores {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+
+        .divValores {
+            justify-content: center;
+            margin: 32px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+           
+
+            .imgvalores {
+                width: auto;
+                height: 180px;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(0px, -35px);
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .imgvalores {
+                    width: auto;
+                    height: 150px;
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .divValores {
+                margin: 15px;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .valores {
+            display: flex;
+            flex-direction: column;
+            padding-top: 0px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+main {
+    section {
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            fieldset {
+                width: 418px;
+                height: 560px;
+                border-radius: 30px;
+                background: $colorTextos;
+                padding: 20px;
+                border: none;
+                margin: 59px;
+
+                .formulario {
+                    width: 331px;
+                    padding: 9px 24px;
+                    align-items: center;
+                    border-radius: 24px;
+                    border: 1px solid $colorSecundario;
+                    background-color: $colorTextos;
+                    margin: 32px;
+
+                    #nombre {
+                        background: none;
+                        border: none;
+                        width: 100%;
+                        color: #C7C7C7;
+                        text-align: left;
+                        font-family: $fuentePrincipal;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                    }
+
+                    #email {
+                        background: none;
+                        border: none;
+                        width: 100%;
+                        color: #C7C7C7;
+                        text-align: left;
+                        font-family: $fuentePrincipal;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                    }
+
+                    #asunto {
+                        background: none;
+                        border: none;
+                        width: 100%;
+                        color: #C7C7C7;
+                        text-align: left;
+                        font-family: $fuentePrincipal;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                    }
+
+                    #mensaje {
+                        background: none;
+                        border: none;
+                        height: 97px;
+                        width: 100%;
+                        color: #C7C7C7;
+                        text-align: left;
+                        font-family: $fuentePrincipal;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        align-items: center;
+                    }
+                }
+
+                @media screen and (max-width:768px) {
+                    .formulario {
+                        width: 246px;
+                        padding: 4px 9px 0px 24px;
+                        margin: 20px 0px 30px 8px;
+                    }
+                }
+
+            }
+
+            @media screen and (max-width:768px) {
+                fieldset {
+                    width: 300px;
+                    height: 500px;
+                }
+            }
+
+            .botonContacto {
+                width: 331px;
+                padding: 16px 60px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                border-color: $colorHoverBotones;
+                background: $colorHoverBotones;
+                transition: background-color 1s, transform 1s;
+                font-family: $fuentePrincipal;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                border: none;
+
+                &:hover {
+                    background-color: $colorTextos;
+                    color: $colorHoverBotones;
+                    transform: translate(0px, -5px);
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .botonContacto {
+                    width: 270px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,3 +1,5 @@
+/*Variables*/
+/*Reset*/
 /* reset */
 * {
   margin: 0;
@@ -59,6 +61,7 @@ a {
 }
 
 /*Header*/
+/*Header*/
 header {
   display: flex;
   justify-content: space-between;
@@ -107,7 +110,7 @@ header .navbar .container .nav-link:hover {
   color: #D529D1;
 }
 
-/*Inicio Portada*/
+/*Index*/
 main {
   justify-content: center;
 }
@@ -346,17 +349,16 @@ main .mainPaginas .iconoProyectos {
   justify-content: end;
   margin: 1px;
 }
-
-.container .tituloProyecto1 {
+main .container .tituloProyecto1 {
   padding: 70px 0px 5px 0px;
 }
-.container #carouselExampleRide {
+main .container #carouselExampleRide {
   display: none;
 }
-.container #carouselExampleInterval {
+main .container #carouselExampleInterval {
   display: none;
 }
-.container .proyecto1 {
+main .container .proyecto1 {
   align-items: end;
   /*Galeria Proyecto 1*/
   display: grid;
@@ -368,33 +370,33 @@ main .mainPaginas .iconoProyectos {
   margin: 0;
   justify-content: center;
 }
-.container .proyecto1 .parque1_1 {
+main .container .proyecto1 .parque1_1 {
   grid-area: parque1_1;
 }
-.container .proyecto1 .parque1_2 {
+main .container .proyecto1 .parque1_2 {
   grid-area: parque1_2;
 }
-.container .proyecto1 .parque1_3 {
+main .container .proyecto1 .parque1_3 {
   grid-area: parque1_3;
 }
-.container .proyecto1 .parque1_4 {
+main .container .proyecto1 .parque1_4 {
   grid-area: parque1_4;
 }
-.container .proyecto1 .parque1_5 {
+main .container .proyecto1 .parque1_5 {
   grid-area: parque1_5;
 }
 @media screen and (max-width: 768px) {
-  .container .proyecto1 {
+  main .container .proyecto1 {
     display: none;
   }
-  .container #carouselExampleRide {
+  main .container #carouselExampleRide {
     display: flex;
   }
 }
-.container .tituloProyecto2 {
+main .container .tituloProyecto2 {
   padding: 70px 0px 5px 0px;
 }
-.container .proyecto2 {
+main .container .proyecto2 {
   align-items: end;
   /*Galeria Proyecto 2*/
   display: grid;
@@ -406,30 +408,30 @@ main .mainPaginas .iconoProyectos {
   margin: 0;
   justify-content: center;
 }
-.container .proyecto2 .parque2_1 {
+main .container .proyecto2 .parque2_1 {
   grid-area: parque2_1;
 }
-.container .proyecto2 .parque2_2 {
+main .container .proyecto2 .parque2_2 {
   grid-area: parque2_2;
 }
-.container .proyecto2 .parque2_3 {
+main .container .proyecto2 .parque2_3 {
   grid-area: parque2_3;
 }
-.container .proyecto2 .parque2_4 {
+main .container .proyecto2 .parque2_4 {
   grid-area: parque2_4;
 }
-.container .proyecto2 .parque2_5 {
+main .container .proyecto2 .parque2_5 {
   grid-area: parque2_5;
 }
 @media screen and (max-width: 768px) {
-  .container .proyecto2 {
+  main .container .proyecto2 {
     display: none;
   }
-  .container #carouselExampleInterval {
+  main .container #carouselExampleInterval {
     display: flex;
   }
 }
-.container .descripcionProyectos {
+main .container .descripcionProyectos {
   display: flex;
   justify-content: center;
   padding: 3px 0px 40px 0px;
@@ -513,6 +515,10 @@ main .valores .divValores {
 main .valores .divValores .imgvalores {
   width: auto;
   height: 180px;
+  transition: transform 1s;
+}
+main .valores .divValores .imgvalores:hover {
+  transform: translate(0px, -35px);
 }
 @media screen and (max-width: 768px) {
   main .valores .divValores .imgvalores {
@@ -546,6 +552,12 @@ body main .seccionNosotros .fotosFundadores {
   position: absolute;
   justify-content: center;
   align-items: center;
+}
+body main .seccionNosotros .fotosFundadores .divFundadores {
+  transition: transform 1s;
+}
+body main .seccionNosotros .fotosFundadores .divFundadores:hover {
+  transform: translate(0px, -35px);
 }
 body main .seccionNosotros .fotosFundadores .fundadores {
   align-items: center;
@@ -751,6 +763,7 @@ main section form .botonContacto:hover {
 }
 
 /*Footer*/
+/*Footer*/
 .container-fluid {
   align-items: center;
   justify-content: center;
@@ -818,7 +831,7 @@ main section form .botonContacto:hover {
   font-weight: 700;
 }
 
-/*Media query*/
+/*Media query Universales*/
 @media screen and (max-width: 768px) {
   .mainPaginas {
     display: flex;

@@ -1,0 +1,134 @@
+main {
+    .mainPaginas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .iconoProyectos {
+            width: 80px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin: 1px;
+        }
+    }
+
+    .container {
+        .tituloProyecto1 {
+            padding: 70px 0px 5px 0px;
+        }
+    
+        #carouselExampleRide {
+            display: none;
+        }
+    
+        #carouselExampleInterval {
+            display: none;
+        }
+    
+        .proyecto1 {
+            align-items: end;
+    
+            /*Galeria Proyecto 1*/
+            .parque1_1 {
+                grid-area: parque1_1;
+            }
+    
+            .parque1_2 {
+                grid-area: parque1_2;
+            }
+    
+            .parque1_3 {
+                grid-area: parque1_3;
+            }
+    
+            .parque1_4 {
+                grid-area: parque1_4;
+            }
+    
+            .parque1_5 {
+                grid-area: parque1_5;
+            }
+    
+            display: grid;
+            grid-template-areas: "parque1_1 parque1_2 parque1_3 parque1_5"
+            "parque1_1 parque1_4 parque1_4 parque1_5";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 5px;
+            column-gap: 10px;
+            margin: 0;
+            justify-content: center;
+    
+    
+        }
+    
+        @media screen and (max-width:768px) {
+            .proyecto1 {
+                display: none;
+            }
+    
+            #carouselExampleRide {
+                display: flex;
+            }
+        }
+    
+        .tituloProyecto2 {
+            padding: 70px 0px 5px 0px;
+        }
+    
+        .proyecto2 {
+            align-items: end;
+    
+            /*Galeria Proyecto 2*/
+            .parque2_1 {
+                grid-area: parque2_1;
+            }
+    
+            .parque2_2 {
+                grid-area: parque2_2;
+            }
+    
+            .parque2_3 {
+                grid-area: parque2_3;
+            }
+    
+            .parque2_4 {
+                grid-area: parque2_4;
+            }
+    
+            .parque2_5 {
+                grid-area: parque2_5;
+            }
+    
+            display: grid;
+            grid-template-areas: "parque2_2 parque2_2 parque2_5 parque2_3"
+            "parque2_1 parque2_4 parque2_4 parque2_3";
+    
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            row-gap: 5px;
+            column-gap: 10px;
+            margin: 0;
+            justify-content: center;
+        }
+    
+        @media screen and (max-width:768px) {
+            .proyecto2 {
+                display: none;
+            }
+    
+            #carouselExampleInterval {
+                display: flex;
+            }
+        }
+    
+        .descripcionProyectos {
+            display: flex;
+            justify-content: center;
+            padding: 3px 0px 40px 0px;
+            ;
+        }
+    }
+}

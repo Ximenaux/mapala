@@ -1,0 +1,261 @@
+main {
+    justify-content: center;
+
+    #portada {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width:768px) {
+            #portada {
+                padding: 150px 0px 80px 0px;
+            }
+        }
+
+        .portadaPrincipal {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .tituloPrincipalHome {
+                max-width: 40rem;
+                display: flex;
+                text-align: center;
+                line-height: 70px;
+                justify-content: center;
+                font-size: 64px;
+                font-weight: 700;
+                font-style: normal
+            }
+
+            @media screen and (max-width:768px) {
+                .tituloPrincipalHome {
+                    font-size: 48px;
+                    max-width: 470px;
+                    line-height: 50px;
+                }
+            }
+
+            .parrafoMain {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                max-width: 544px;
+                text-align: center;
+                margin: 32px;
+            }
+
+            @media screen and (max-width:768px) {
+                .parrafoMain {
+                    font-size: 22px;
+                    max-width: 380px;
+                }
+            }
+
+            .boton {
+                background-color: $colorTextos;
+                padding: 16px 50px;
+                border-radius: 50px;
+                color: $colorFondo;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                margin: 43px;
+                transition: background-color 1s, transform 1s;
+
+                &:hover {
+                    background-color: $colorHoverBotones;
+                    color: $colorTextos;
+                    transform: translate(0px, -5px);
+                }
+            }
+
+            .imgClientesPortada {
+                width: 141px;
+                height: 117px;
+                position: absolute;
+                top: 24%;
+                right: -30%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(-5px, -15px);
+                }
+            }
+
+
+            .imgCohetePortada {
+                width: 260px;
+                height: 201px;
+                position: absolute;
+                top: 50%;
+                right: 95%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(20px, -15px);
+                }
+            }
+
+            .imgForma1Portada {
+                width: 70.772px;
+                height: 72.327px;
+                transform: rotate(148.76deg);
+                position: absolute;
+                top: -25%;
+                right: 63%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(-5px, -15px);
+                }
+            }
+
+            .imgForma2Portada {
+                width: 91px;
+                height: 93px;
+                transform: rotate(-50deg);
+                position: absolute;
+                top: 100%;
+                right: 10%;
+                transition: transform 1s;
+
+                &:hover {
+                    transform: translate(10px, -25px);
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .imgClientesPortada {
+                    width: 100px;
+                    height: auto;
+                    position: absolute;
+                    top: 60%;
+                    right: 1%;
+                }
+
+                .imgForma1Portada {
+                    width: 70.772px;
+                    height: 72.327px;
+                    transform: rotate(148.76deg);
+                    position: absolute;
+                    top: -15%;
+                    right: 63%;
+                }
+
+                .imgForma2Portada {
+                    width: 60px;
+                    height: auto;
+                    position: absolute;
+                    top: 100%;
+                    right: 30%;
+                }
+
+                .imgForma1Portada {
+                    width: 50px;
+                    height: auto;
+                    position: absolute;
+                    top: -20%;
+                    right: 60%;
+                }
+
+                .imgCohetePortada {
+                    width: 120px;
+                    height: auto;
+                    position: absolute;
+                    top: 65%;
+                    right: 85%;
+                }
+            }
+
+        }
+    }
+
+    .proyectosRecientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width:768px) {
+            .imgsProyectosRecientes {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .proyectosRecientesTitulo {
+            grid-area: proyectostitulo;
+        }
+
+        .imgsProyectosRecientes {
+            grid-area: imagenesproyectos;
+            display: grid;
+            grid-template-areas:
+                "proyectostitulo proyectostitulo proyectostitulo"
+                "imagenesproyectos imagenesproyectos imagenesproyectos";
+            grid-template-columns: auto;
+            grid-template-rows: 1fr auto;
+            display: flex;
+            align-items: center;
+
+            .imgProyectosRecientes {
+                padding: 2px;
+                width: auto;
+            }
+
+            @media screen and (max-width:768px) {
+                .imgProyectosRecientes {
+                    padding: 2px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    #clientesFelices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+
+        .logosCentrosComerciales {
+            display: flex;
+        }
+
+        @media screen and (max-width:768px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .logosClientes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 97px;
+            height: 97px;
+            margin: 10px;
+            transition: transform 1s;
+
+            &:hover {
+                transform: translate(0px, -35px);
+            }
+
+            @media screen and (max-width:768px) {
+                .logocc {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
