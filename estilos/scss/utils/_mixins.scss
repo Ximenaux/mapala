@@ -1,0 +1,17 @@
+@mixin flex ($colorBackground, $color) {
+    background-color: $colorBackground;
+    padding: 16px 50px;
+    border-radius: 50px;
+    color: $color;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 43px;
+    transition: background-color 1s, transform 1s;
+}
+
+@mixin hover {
+background-color: $colorTextos;
+        color: $colorHoverBotones;
+        transform: translate(0px, -10px);
+}

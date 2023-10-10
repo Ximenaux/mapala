@@ -1,4 +1,5 @@
 /*Variables*/
+/*Mixins*/
 /*Reset*/
 * {
   margin: 0;
@@ -174,9 +175,9 @@ main #portada .portadaPrincipal .boton {
   transition: background-color 1s, transform 1s;
 }
 main #portada .portadaPrincipal .boton:hover {
-  background-color: #6025B5;
-  color: white;
-  transform: translate(0px, -5px);
+  background-color: white;
+  color: #6025B5;
+  transform: translate(0px, -10px);
 }
 main #portada .portadaPrincipal .imgClientesPortada {
   width: 141px;
@@ -476,9 +477,9 @@ main .seccionServicios .cardServicios .divCardServicios .boton {
   transition: background-color 1s, transform 1s;
 }
 main .seccionServicios .cardServicios .divCardServicios .boton:hover {
-  background-color: #6025B5;
-  color: white;
-  transform: translate(0px, -5px);
+  background-color: white;
+  color: #6025B5;
+  transform: translate(0px, -10px);
 }
 @media screen and (max-width: 768px) {
   main .seccionServicios .cardServicios .divCardServicios {
@@ -735,24 +736,22 @@ main section form fieldset .formulario #mensaje {
   }
 }
 main section form .botonContacto {
-  width: 331px;
-  padding: 16px 60px;
-  justify-content: center;
-  align-items: center;
+  background-color: #6025B5;
+  padding: 16px 50px;
   border-radius: 50px;
-  border-color: #6025B5;
-  background: #6025B5;
-  transition: background-color 1s, transform 1s;
-  font-family: "Source Sans 3";
+  color: white;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
+  margin: 43px;
+  transition: background-color 1s, transform 1s;
   border: none;
+  margin: 0px;
 }
 main section form .botonContacto:hover {
   background-color: white;
   color: #6025B5;
-  transform: translate(0px, -5px);
+  transform: translate(0px, -10px);
 }
 @media screen and (max-width: 768px) {
   main section form .botonContacto {

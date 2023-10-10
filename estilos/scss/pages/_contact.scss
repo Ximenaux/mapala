@@ -93,27 +93,16 @@ main {
             }
 
             .botonContacto {
-                width: 331px;
-                padding: 16px 60px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50px;
-                border-color: $colorHoverBotones;
-                background: $colorHoverBotones;
-                transition: background-color 1s, transform 1s;
-                font-family: $fuentePrincipal;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                border: none;
 
-                &:hover {
-                    background-color: $colorTextos;
-                    color: $colorHoverBotones;
-                    transform: translate(0px, -5px);
-                }
-            }
-
+                @include flex ($colorHoverBotones, $colorTextos); 
+                                border: none;
+                                margin: 0px;
+                
+                                &:hover {
+                                   @include hover
+                                }
+                  }
+                
             @media screen and (max-width:768px) {
                 .botonContacto {
                     width: 270px;

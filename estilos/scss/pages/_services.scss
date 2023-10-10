@@ -33,20 +33,10 @@ main {
                 margin-right: 100px;
 
                 .boton {
-                    background-color: $colorTextos;
-                    padding: 16px 50px;
-                    border-radius: 50px;
-                    color: $colorFondo;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 700;
-                    margin: 43px;
-                    transition: background-color 1s, transform 1s;
+                    @include flex ($colorTextos, $colorFondo);
 
                     &:hover {
-                        background-color: $colorHoverBotones;
-                        color: $colorTextos;
-                        transform: translate(0px, -5px);
+                        @include hover;
                     }
                 }
             }
