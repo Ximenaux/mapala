@@ -248,58 +248,6 @@ main #portada .portadaPrincipal .imgClientesPortada:hover {
     height: auto;
   }
 }
-main #portada .portadaPrincipal .imgCohetePortada {
-  width: 180px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  transition: transform 1s;
-}
-main #portada .portadaPrincipal .imgCohetePortada:hover {
-  transform: translate(20px, -15px);
-}
-@media (max-width: 1200px) {
-  main #portada .portadaPrincipal .imgCohetePortada {
-    width: 160px;
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  main #portada .portadaPrincipal .imgCohetePortada {
-    width: 130px;
-    height: auto;
-  }
-}
-main #portada .portadaPrincipal .imgForma1Portada {
-  width: 70.772px;
-  height: 72.327px;
-  transform: rotate(148.76deg);
-  position: absolute;
-  top: -25%;
-  right: 63%;
-  transition: transform 1s;
-}
-main #portada .portadaPrincipal .imgForma1Portada:hover {
-  transform: translate(-5px, -15px);
-}
-@media (max-width: 320px) {
-  main #portada .portadaPrincipal .imgForma1Portada {
-    top: 10%;
-  }
-}
-main #portada .portadaPrincipal .imgForma2Portada {
-  width: 91px;
-  height: 93px;
-  transform: rotate(-50deg);
-  position: absolute;
-  top: 100%;
-  right: 10%;
-  transition: transform 1s;
-}
-main #portada .portadaPrincipal .imgForma2Portada:hover {
-  transform: translate(10px, -25px);
-}
 @media (max-width: 768px) {
   main #portada .portadaPrincipal .imgClientesPortada {
     width: 100px;
@@ -318,27 +266,91 @@ main #portada .portadaPrincipal .imgForma2Portada:hover {
     right: 1%;
   }
 }
+main #portada .portadaPrincipal .imgCohetePortada {
+  width: 190px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transition: transform 1s;
+}
+main #portada .portadaPrincipal .imgCohetePortada:hover {
+  transform: translate(20px, -15px);
+}
+@media (max-width: 1200px) {
+  main #portada .portadaPrincipal .imgCohetePortada {
+    width: 160px;
+    height: auto;
+    right: 80%;
+    top: 60%;
+  }
+}
+@media (max-width: 768px) {
+  main #portada .portadaPrincipal .imgCohetePortada {
+    width: 130px;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  main #portada .portadaPrincipal .imgCohetePortada {
+    width: 130px;
+    height: auto;
+    right: 80%;
+    top: 60%;
+  }
+}
 main #portada .portadaPrincipal .imgForma1Portada {
-  width: 70.772px;
-  height: 72.327px;
+  width: 70px;
+  height: auto;
   transform: rotate(148.76deg);
   position: absolute;
-  top: -15%;
+  top: -25%;
   right: 63%;
+  transition: transform 1s;
+}
+main #portada .portadaPrincipal .imgForma1Portada:hover {
+  transform: translate(-5px, -15px);
+}
+@media (max-width: 768px) {
+  main #portada .portadaPrincipal .imgForma1Portada {
+    top: -15%;
+    width: 60px;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  main #portada .portadaPrincipal .imgForma1Portada {
+    top: -15%;
+    width: 50px;
+    height: auto;
+  }
 }
 main #portada .portadaPrincipal .imgForma2Portada {
-  width: 60px;
+  width: 80px;
   height: auto;
+  transform: rotate(-50deg);
   position: absolute;
   top: 100%;
-  right: 30%;
+  right: 10%;
+  transition: transform 1s;
 }
-main #portada .portadaPrincipal .imgForma1Portada {
-  width: 50px;
-  height: auto;
-  position: absolute;
-  top: -20%;
-  right: 60%;
+main #portada .portadaPrincipal .imgForma2Portada:hover {
+  transform: translate(10px, -25px);
+}
+@media (max-width: 768px) {
+  main #portada .portadaPrincipal .imgForma2Portada {
+    top: 100%;
+    width: 60px;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  main #portada .portadaPrincipal .imgForma2Portada {
+    top: 100%;
+    right: 20%;
+    width: 50px;
+    height: auto;
+  }
 }
 @media (max-width: 320px) {
   main #portada {
@@ -440,6 +452,24 @@ main .mainPaginas {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  main .mainPaginas .tituloPrincipal {
+    font-size: 48px;
+    max-width: 300px;
+    line-height: 50px;
+    font-style: normal;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  main .mainPaginas .tituloPrincipal {
+    font-size: 40px;
+    max-width: 300px;
+    line-height: 50px;
+    font-style: normal;
+    text-align: center;
+  }
+}
 main .mainPaginas .iconoProyectos {
   width: 80px;
   height: auto;
@@ -484,7 +514,23 @@ main .container .proyecto1 .parque1_4 {
 main .container .proyecto1 .parque1_5 {
   grid-area: parque1_5;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1200px) {
+  main .container .proyecto1 {
+    display: none;
+  }
+  main .container #carouselExampleRide {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  main .container .proyecto1 {
+    display: none;
+  }
+  main .container #carouselExampleRide {
+    display: flex;
+  }
+}
+@media (max-width: 320px) {
   main .container .proyecto1 {
     display: none;
   }
@@ -522,7 +568,23 @@ main .container .proyecto2 .parque2_4 {
 main .container .proyecto2 .parque2_5 {
   grid-area: parque2_5;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1200px) {
+  main .container .proyecto2 {
+    display: none;
+  }
+  main .container #carouselExampleInterval {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  main .container .proyecto2 {
+    display: none;
+  }
+  main .container #carouselExampleInterval {
+    display: flex;
+  }
+}
+@media (max-width: 320px) {
   main .container .proyecto2 {
     display: none;
   }
@@ -537,6 +599,26 @@ main .container .descripcionProyectos {
 }
 
 /*Servicios*/
+@media (max-width: 768px) {
+  main .mainPaginas {
+    font-size: 48px;
+    max-width: 300px;
+    line-height: 50px;
+    font-style: normal;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  main .mainPaginas {
+    font-size: 40px;
+    max-width: 300px;
+    line-height: 50px;
+    font-style: normal;
+    text-align: center;
+    max-width: 100%;
+  }
+}
 main .seccionServicios {
   display: flex;
   justify-content: center;
@@ -550,7 +632,12 @@ main .seccionServicios div .imgServicios {
   height: auto;
   margin: 120px;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1200px) {
+  main .seccionServicios div .imgServicios {
+    margin: 100px 0px 0px 0px;
+  }
+}
+@media (max-width: 768px) {
   main .seccionServicios div .imgServicios {
     margin: 100px 0px 0px 0px;
     width: 280px;
@@ -581,18 +668,23 @@ main .seccionServicios .cardServicios .divCardServicios .boton:hover {
   color: #6025B5;
   transform: translate(0px, -10px);
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1200px) {
   main .seccionServicios .cardServicios .divCardServicios {
     margin-right: 0px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  main .seccionServicios .cardServicios .divCardServicios {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 768px) {
   main .seccionServicios .cardServicios {
     margin: 0px;
     display: flex;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main .seccionServicios {
     display: flex;
     flex-direction: column;
@@ -619,18 +711,25 @@ main .valores .divValores .imgvalores {
 main .valores .divValores .imgvalores:hover {
   transform: translate(0px, -35px);
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main .valores .divValores .imgvalores {
     width: auto;
     height: 150px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main .valores .divValores {
     margin: 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  main .valores {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 1200px) {
   main .valores {
     display: flex;
     flex-direction: column;
@@ -638,7 +737,7 @@ main .valores .divValores .imgvalores:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .parrafosPrincipales {
     font-size: 22px;
     max-width: 300px;
@@ -700,12 +799,24 @@ body main .seccionNosotros .fotosFundadores .fotoFundador {
   width: 293px;
   height: 473px;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1200px) {
+  body main .seccionNosotros .fotosFundadores {
+    flex-wrap: wrap;
+    margin-top: 500px;
+  }
+}
+@media (max-width: 768px) {
+  body main .seccionNosotros .fotosFundadores {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 320px) {
   body main .seccionNosotros .fotosFundadores {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body main .seccionNosotros {
     height: 2500px;
   }
@@ -713,6 +824,12 @@ body main .seccionNosotros .fotosFundadores .fotoFundador {
 body main #datoscuriosos .tituloUs {
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 320px) {
+  body main #datoscuriosos {
+    height: 950px;
+    margin-top: 1554px;
+  }
 }
 body #datosCuriosos .datosEspecificos {
   display: flex;
@@ -727,6 +844,16 @@ body #datosCuriosos .datosEspecificos .datosEquipo {
   font-style: normal;
   font-weight: 700;
   padding-right: 0px;
+}
+@media (max-width: 768px) {
+  body #datosCuriosos .datosEspecificos {
+    line-height: 200px;
+  }
+}
+@media (max-width: 320px) {
+  body #datosCuriosos .datosEspecificos {
+    line-height: 200px;
+  }
 }
 body #datosCuriosos .datosEspecificos .datosExperiencia {
   color: #FFDE3E;
@@ -752,7 +879,7 @@ body #datosCuriosos .datosEspecificos .textoDatosEquipo {
   font-weight: 700;
   line-height: 35px;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body #datosCuriosos .datosEspecificos {
     flex-direction: column;
   }

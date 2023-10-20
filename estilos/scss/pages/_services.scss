@@ -1,4 +1,28 @@
 main {
+
+    .mainPaginas {
+
+        .tituloPrincipal {}
+
+        @include md {
+            font-size: 48px;
+            max-width: 300px;
+            line-height: 50px;
+            font-style: normal;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        @include sm {
+            font-size: 40px;
+            max-width: 300px;
+            line-height: 50px;
+            font-style: normal;
+            text-align: center;
+            max-width: 100%;
+        }
+    }
+
     .seccionServicios {
         display: flex;
         justify-content: center;
@@ -14,7 +38,13 @@ main {
                 margin: 120px;
             }
 
-            @media screen and (max-width:768px) {
+            @include xl {
+                .imgServicios {
+                    margin: 100px 0px 0px 0px;
+                }
+            }
+
+            @include md {
                 .imgServicios {
                     margin: 100px 0px 0px 0px;
                     width: 280px;
@@ -41,14 +71,20 @@ main {
                 }
             }
 
-            @media screen and (max-width:768px) {
+            @include xl {
+                .divCardServicios {
+                    margin-right: 0px;
+                }
+            }
+
+            @include md {
                 .divCardServicios {
                     margin-right: 0px;
                 }
             }
         }
 
-        @media screen and (max-width:768px) {
+        @include md {
             .cardServicios {
                 margin: 0px;
                 display: flex;
@@ -56,7 +92,7 @@ main {
         }
     }
 
-    @media screen and (max-width:768px) {
+    @include md {
         .seccionServicios {
             display: flex;
             flex-direction: column;
@@ -75,7 +111,6 @@ main {
             align-items: center;
             display: flex;
             flex-direction: column;
-           
 
             .imgvalores {
                 width: auto;
@@ -87,7 +122,7 @@ main {
                 }
             }
 
-            @media screen and (max-width:768px) {
+            @include md {
                 .imgvalores {
                     width: auto;
                     height: 150px;
@@ -95,14 +130,22 @@ main {
             }
         }
 
-        @media screen and (max-width:768px) {
+        @include md {
             .divValores {
                 margin: 15px;
             }
         }
     }
 
-    @media screen and (max-width:768px) {
+    @include md {
+        .valores {
+            display: flex;
+            flex-direction: column;
+            padding-top: 0px;
+        }
+    }
+
+    @include xl {
         .valores {
             display: flex;
             flex-direction: column;
@@ -111,10 +154,10 @@ main {
     }
 }
 
-@media screen and (max-width:768px) {
-.parrafosPrincipales {
-    font-size: 22px;
-    max-width: 300px;
-    line-height: 30px;
-}
+@include md {
+    .parrafosPrincipales {
+        font-size: 22px;
+        max-width: 300px;
+        line-height: 30px;
+    }
 }

@@ -13,12 +13,12 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                .divFundadores{
+                .divFundadores {
                     transition: transform 1s;
 
-                &:hover {
-                    transform: translate(0px, -35px);
-                }
+                    &:hover {
+                        transform: translate(0px, -35px);
+                    }
                 }
 
                 .fundadores {
@@ -62,14 +62,28 @@ body {
                 }
             }
 
-            @media screen and (max-width:768px) {
+            @include xl {
+                .fotosFundadores {
+                    flex-wrap: wrap;
+                    margin-top: 500px;
+                }
+            }
+
+            @include md {
+                .fotosFundadores {
+                    flex-wrap: wrap;
+                    margin-top: 30px;
+                }
+            }
+
+            @include sm {
                 .fotosFundadores {
                     flex-direction: column;
                 }
             }
         }
 
-        @media screen and (max-width:768px) {
+        @include md {
             .seccionNosotros {
                 height: 2500px;
             }
@@ -79,6 +93,12 @@ body {
             .tituloUs {
                 justify-content: center;
                 text-align: center;
+            }
+        }
+        @include sm {
+            #datoscuriosos {
+                height: 950px;
+                margin-top: 1554px;
             }
         }
     }
@@ -97,6 +117,14 @@ body {
                 font-style: normal;
                 font-weight: 700;
                 padding-right: 0px;
+            }
+
+            @include md {
+                line-height: 200px;
+            }
+
+            @include sm {
+                line-height: 200px;
             }
 
             .datosExperiencia {
@@ -127,7 +155,7 @@ body {
             }
         }
 
-        @media screen and (max-width:768px) {
+        @include md {
             .datosEspecificos {
                 flex-direction: column;
             }
