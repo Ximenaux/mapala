@@ -1,5 +1,5 @@
 /*Media query Universales*/
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .mainPaginas {
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
   }
   .parrafosPrincipales {
     font-size: 22px;
-    max-width: 300px;
+    max-width: 280px;
     line-height: 30px;
   }
   .iconoProyectos {
@@ -160,11 +160,6 @@ main #portada {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  main #portada #portada {
-    padding: 150px 0px 80px 0px;
-  }
-}
 main #portada .portadaPrincipal {
   display: flex;
   flex-direction: column;
@@ -182,11 +177,18 @@ main #portada .portadaPrincipal .tituloPrincipalHome {
   font-weight: 700;
   font-style: normal;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main #portada .portadaPrincipal .tituloPrincipalHome {
     font-size: 48px;
     max-width: 470px;
     line-height: 50px;
+  }
+}
+@media (max-width: 320px) {
+  main #portada .portadaPrincipal .tituloPrincipalHome {
+    font-size: 40px;
+    max-width: 470px;
+    line-height: 40px;
   }
 }
 main #portada .portadaPrincipal .parrafoMain {
@@ -197,10 +199,18 @@ main #portada .portadaPrincipal .parrafoMain {
   text-align: center;
   margin: 32px;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  main #portada .portadaPrincipal .parrafoMain {
+    font-size: 24px;
+    max-width: 380px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 320px) {
   main #portada .portadaPrincipal .parrafoMain {
     font-size: 22px;
     max-width: 380px;
+    line-height: 30px;
   }
 }
 main #portada .portadaPrincipal .boton {
@@ -230,16 +240,36 @@ main #portada .portadaPrincipal .imgClientesPortada {
 main #portada .portadaPrincipal .imgClientesPortada:hover {
   transform: translate(-5px, -15px);
 }
+@media (max-width: 1200px) {
+  main #portada .portadaPrincipal .imgClientesPortada {
+    top: 30%;
+    right: -15%;
+    width: 100px;
+    height: auto;
+  }
+}
 main #portada .portadaPrincipal .imgCohetePortada {
-  width: 260px;
-  height: 201px;
+  width: 180px;
+  height: auto;
   position: absolute;
   top: 50%;
-  right: 95%;
+  right: 100%;
   transition: transform 1s;
 }
 main #portada .portadaPrincipal .imgCohetePortada:hover {
   transform: translate(20px, -15px);
+}
+@media (max-width: 1200px) {
+  main #portada .portadaPrincipal .imgCohetePortada {
+    width: 160px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  main #portada .portadaPrincipal .imgCohetePortada {
+    width: 130px;
+    height: auto;
+  }
 }
 main #portada .portadaPrincipal .imgForma1Portada {
   width: 70.772px;
@@ -253,6 +283,11 @@ main #portada .portadaPrincipal .imgForma1Portada {
 main #portada .portadaPrincipal .imgForma1Portada:hover {
   transform: translate(-5px, -15px);
 }
+@media (max-width: 320px) {
+  main #portada .portadaPrincipal .imgForma1Portada {
+    top: 10%;
+  }
+}
 main #portada .portadaPrincipal .imgForma2Portada {
   width: 91px;
   height: 93px;
@@ -265,7 +300,7 @@ main #portada .portadaPrincipal .imgForma2Portada {
 main #portada .portadaPrincipal .imgForma2Portada:hover {
   transform: translate(10px, -25px);
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main #portada .portadaPrincipal .imgClientesPortada {
     width: 100px;
     height: auto;
@@ -273,34 +308,46 @@ main #portada .portadaPrincipal .imgForma2Portada:hover {
     top: 60%;
     right: 1%;
   }
-  main #portada .portadaPrincipal .imgForma1Portada {
-    width: 70.772px;
-    height: 72.327px;
-    transform: rotate(148.76deg);
-    position: absolute;
-    top: -15%;
-    right: 63%;
-  }
-  main #portada .portadaPrincipal .imgForma2Portada {
-    width: 60px;
+}
+@media (max-width: 320px) {
+  main #portada .portadaPrincipal .imgClientesPortada {
+    width: 80px;
     height: auto;
     position: absolute;
-    top: 100%;
-    right: 30%;
+    top: 60%;
+    right: 1%;
   }
-  main #portada .portadaPrincipal .imgForma1Portada {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    top: -20%;
-    right: 60%;
+}
+main #portada .portadaPrincipal .imgForma1Portada {
+  width: 70.772px;
+  height: 72.327px;
+  transform: rotate(148.76deg);
+  position: absolute;
+  top: -15%;
+  right: 63%;
+}
+main #portada .portadaPrincipal .imgForma2Portada {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 100%;
+  right: 30%;
+}
+main #portada .portadaPrincipal .imgForma1Portada {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: -20%;
+  right: 60%;
+}
+@media (max-width: 320px) {
+  main #portada {
+    padding: 200px 0px 80px 0px;
   }
-  main #portada .portadaPrincipal .imgCohetePortada {
-    width: 120px;
-    height: auto;
-    position: absolute;
-    top: 65%;
-    right: 85%;
+}
+@media (max-width: 768px) {
+  main #portada {
+    padding: 150px 0px 80px 0px;
   }
 }
 main .proyectosRecientes {
@@ -310,12 +357,6 @@ main .proyectosRecientes {
   width: auto;
   justify-content: center;
   align-items: center;
-}
-@media screen and (max-width: 768px) {
-  main .proyectosRecientes .imgsProyectosRecientes {
-    display: flex;
-    flex-direction: column;
-  }
 }
 main .proyectosRecientes .proyectosRecientesTitulo {
   grid-area: proyectostitulo;
@@ -333,10 +374,29 @@ main .proyectosRecientes .imgsProyectosRecientes .imgProyectosRecientes {
   padding: 2px;
   width: auto;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main .proyectosRecientes .imgsProyectosRecientes .imgProyectosRecientes {
     padding: 2px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1200px) {
+  main .imgsProyectosRecientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  main .imgsProyectosRecientes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  main .imgsProyectosRecientes {
     display: flex;
     flex-direction: column;
   }
@@ -350,7 +410,7 @@ main #clientesFelices {
 main #clientesFelices .logosCentrosComerciales {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main #clientesFelices .row {
     display: flex;
     flex-direction: column;
@@ -368,7 +428,7 @@ main #clientesFelices .logosClientes {
 main #clientesFelices .logosClientes:hover {
   transform: translate(0px, -35px);
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main #clientesFelices .logosClientes .logocc {
     width: 100px;
   }
@@ -578,6 +638,13 @@ main .valores .divValores .imgvalores:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .parrafosPrincipales {
+    font-size: 22px;
+    max-width: 300px;
+    line-height: 30px;
+  }
+}
 /*Nosotros*/
 body main .seccionNosotros {
   height: 700px;

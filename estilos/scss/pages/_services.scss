@@ -110,3 +110,11 @@ main {
         }
     }
 }
+
+@media screen and (max-width:768px) {
+.parrafosPrincipales {
+    font-size: 22px;
+    max-width: 300px;
+    line-height: 30px;
+}
+}

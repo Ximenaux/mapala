@@ -1,4 +1,29 @@
-@media screen and (max-width:768px) {
+$breakpoints: (
+    "sm": 320px,
+    "md": 768px,
+    "xl": 1200px,
+);
+
+@mixin sm {
+    @media (max-width: map-get($breakpoints, "sm")) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: map-get($breakpoints, "md")) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: map-get($breakpoints, "xl")) {
+        @content;
+    }
+}
+
+//Universales
+@include md {
     .mainPaginas {
         display: flex;
         flex-direction: column;
@@ -20,10 +45,10 @@
         font-style: normal;
         text-align: center;
     }
-   
+
     .parrafosPrincipales {
         font-size: 22px;
-        max-width: 300px;
+        max-width: 280px;
         line-height: 30px;
     }
 

@@ -8,12 +8,6 @@ main {
         justify-content: center;
         align-items: center;
 
-        @media screen and (max-width:768px) {
-            #portada {
-                padding: 150px 0px 80px 0px;
-            }
-        }
-
         .portadaPrincipal {
             display: flex;
             flex-direction: column;
@@ -32,11 +26,19 @@ main {
                 font-style: normal
             }
 
-            @media screen and (max-width:768px) {
+            @include md {
                 .tituloPrincipalHome {
                     font-size: 48px;
                     max-width: 470px;
                     line-height: 50px;
+                }
+            }
+
+            @include sm {
+                .tituloPrincipalHome {
+                    font-size: 40px;
+                    max-width: 470px;
+                    line-height: 40px;
                 }
             }
 
@@ -49,10 +51,19 @@ main {
                 margin: 32px;
             }
 
-            @media screen and (max-width:768px) {
+            @include md {
+                .parrafoMain {
+                    font-size: 24px;
+                    max-width: 380px;
+                    line-height: 30px;
+                }
+            }
+
+            @include sm {
                 .parrafoMain {
                     font-size: 22px;
                     max-width: 380px;
+                    line-height: 30px;
                 }
             }
 
@@ -75,19 +86,38 @@ main {
                 &:hover {
                     transform: translate(-5px, -15px);
                 }
+
+                @include xl {
+                    top: 30%;
+                    right: -15%;
+                    width: 100px;
+                    height: auto;
+                }
             }
 
-
             .imgCohetePortada {
-                width: 260px;
-                height: 201px;
+                width: 180px;
+                height: auto;
                 position: absolute;
                 top: 50%;
-                right: 95%;
+                right: 100%;
                 transition: transform 1s;
 
                 &:hover {
                     transform: translate(20px, -15px);
+                }
+            }
+            @include xl {
+                .imgCohetePortada {
+                    width: 160px;
+                    height: auto;
+                }
+            }
+
+            @include md {
+                .imgCohetePortada {
+                    width: 130px;
+                    height: auto;
                 }
             }
 
@@ -105,6 +135,12 @@ main {
                 }
             }
 
+            @include sm {
+                .imgForma1Portada {
+                    top: 10%;
+                }
+            }
+
             .imgForma2Portada {
                 width: 91px;
                 height: 93px;
@@ -119,7 +155,7 @@ main {
                 }
             }
 
-            @media screen and (max-width:768px) {
+            @include md {
                 .imgClientesPortada {
                     width: 100px;
                     height: auto;
@@ -127,41 +163,54 @@ main {
                     top: 60%;
                     right: 1%;
                 }
+            }
 
-                .imgForma1Portada {
-                    width: 70.772px;
-                    height: 72.327px;
-                    transform: rotate(148.76deg);
-                    position: absolute;
-                    top: -15%;
-                    right: 63%;
-                }
-
-                .imgForma2Portada {
-                    width: 60px;
+            @include sm {
+                .imgClientesPortada {
+                    width: 80px;
                     height: auto;
                     position: absolute;
-                    top: 100%;
-                    right: 30%;
-                }
-
-                .imgForma1Portada {
-                    width: 50px;
-                    height: auto;
-                    position: absolute;
-                    top: -20%;
-                    right: 60%;
-                }
-
-                .imgCohetePortada {
-                    width: 120px;
-                    height: auto;
-                    position: absolute;
-                    top: 65%;
-                    right: 85%;
+                    top: 60%;
+                    right: 1%;
                 }
             }
 
+            .imgForma1Portada {
+                width: 70.772px;
+                height: 72.327px;
+                transform: rotate(148.76deg);
+                position: absolute;
+                top: -15%;
+                right: 63%;
+            }
+
+            .imgForma2Portada {
+                width: 60px;
+                height: auto;
+                position: absolute;
+                top: 100%;
+                right: 30%;
+            }
+
+            .imgForma1Portada {
+                width: 50px;
+                height: auto;
+                position: absolute;
+                top: -20%;
+                right: 60%;
+            }
+        }
+    }
+
+    @include sm {
+        #portada {
+            padding: 200px 0px 80px 0px;
+        }
+    }
+
+    @include md {
+        #portada {
+            padding: 150px 0px 80px 0px;
         }
     }
 
@@ -172,13 +221,6 @@ main {
         width: auto;
         justify-content: center;
         align-items: center;
-
-        @media screen and (max-width:768px) {
-            .imgsProyectosRecientes {
-                display: flex;
-                flex-direction: column;
-            }
-        }
 
         .proyectosRecientesTitulo {
             grid-area: proyectostitulo;
@@ -200,7 +242,7 @@ main {
                 width: auto;
             }
 
-            @media screen and (max-width:768px) {
+            @include md {
                 .imgProyectosRecientes {
                     padding: 2px;
                     width: 100%;
@@ -208,6 +250,28 @@ main {
                     flex-direction: column;
                 }
             }
+        }
+    }
+
+    @include xl {
+        .imgsProyectosRecientes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @include md {
+        .imgsProyectosRecientes {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include sm {
+        .imgsProyectosRecientes {
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -221,7 +285,7 @@ main {
             display: flex;
         }
 
-        @media screen and (max-width:768px) {
+        @include md {
             .row {
                 display: flex;
                 flex-direction: column;
@@ -241,7 +305,7 @@ main {
                 transform: translate(0px, -35px);
             }
 
-            @media screen and (max-width:768px) {
+            @include md {
                 .logocc {
                     width: 100px;
                 }
