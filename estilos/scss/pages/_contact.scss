@@ -94,15 +94,15 @@ main {
 
             .botonContacto {
 
-                @include flex ($colorHoverBotones, $colorTextos); 
-                                border: none;
-                                margin: 0px;
-                
-                                &:hover {
-                                   @include hover
-                                }
-                  }
-                
+                @include flex ($colorHoverBotones, $colorTextos);
+                border: none;
+                margin: 0px;
+
+                &:hover {
+                    @include hover
+                }
+            }
+
             @media screen and (max-width:768px) {
                 .botonContacto {
                     width: 270px;

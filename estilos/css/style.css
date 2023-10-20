@@ -1,3 +1,43 @@
+/*Media query Universales*/
+@media screen and (max-width: 768px) {
+  .mainPaginas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .hr {
+    margin-top: 8px;
+  }
+  .tituloPrincipal {
+    font-size: 48px;
+    max-width: 350px;
+    line-height: 50px;
+    font-style: normal;
+    text-align: center;
+  }
+  .parrafosPrincipales {
+    font-size: 22px;
+    max-width: 300px;
+    line-height: 30px;
+  }
+  .iconoProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 61px;
+    height: auto;
+  }
+  .seccionNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .derechos {
+    text-align: center;
+  }
+}
 /*Variables*/
 /*Mixins*/
 /*Reset*/
@@ -825,47 +865,6 @@ main section form .botonContacto:hover {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-}
-
-/*Media query Universales*/
-@media screen and (max-width: 768px) {
-  .mainPaginas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  h2 {
-    text-align: center;
-  }
-  .hr {
-    margin-top: 8px;
-  }
-  .tituloPrincipal {
-    font-size: 48px;
-    max-width: 300px;
-    line-height: 50px;
-    font-style: normal;
-    text-align: center;
-  }
-  .parrafosPrincipales {
-    font-size: 22px;
-    max-width: 300px;
-    line-height: 30px;
-  }
-  .iconoProyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 61px;
-    height: auto;
-  }
-  .seccionNosotros {
-    display: flex;
-    flex-direction: column;
-  }
-  .derechos {
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

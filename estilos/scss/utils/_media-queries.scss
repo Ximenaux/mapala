@@ -1,5 +1,4 @@
 @media screen and (max-width:768px) {
-
     .mainPaginas {
         display: flex;
         flex-direction: column;
@@ -16,12 +15,12 @@
 
     .tituloPrincipal {
         font-size: 48px;
-        max-width: 300px;
+        max-width: 350px;
         line-height: 50px;
         font-style: normal;
         text-align: center;
     }
-
+   
     .parrafosPrincipales {
         font-size: 22px;
         max-width: 300px;
@@ -43,12 +42,5 @@
 
     .derechos {
         text-align: center;
-    }
-}
-
-
-@mixin mobile {
-    @media screen and (max-width: 768px) {
-        @content;
     }
 }
