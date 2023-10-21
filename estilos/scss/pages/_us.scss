@@ -13,12 +13,12 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                .divFundadores {
+                .divFundadores{
                     transition: transform 1s;
 
-                    &:hover {
-                        transform: translate(0px, -35px);
-                    }
+                &:hover {
+                    transform: translate(0px, -35px);
+                }
                 }
 
                 .fundadores {
@@ -61,24 +61,17 @@ body {
                     height: 473px;
                 }
             }
-
             @include xl {
                 .fotosFundadores {
                     flex-wrap: wrap;
-                    margin-top: 500px;
+                    padding-top: 500px;
                 }
             }
 
             @include md {
                 .fotosFundadores {
-                    flex-wrap: wrap;
-                    margin-top: 30px;
-                }
-            }
-
-            @include sm {
-                .fotosFundadores {
                     flex-direction: column;
+                    padding-top: 10px;
                 }
             }
         }
@@ -88,22 +81,13 @@ body {
                 height: 2500px;
             }
         }
-
-        #datoscuriosos {
-            .tituloUs {
-                justify-content: center;
-                text-align: center;
-            }
-        }
-        @include sm {
-            #datoscuriosos {
-                height: 950px;
-                margin-top: 1554px;
-            }
-        }
     }
 
     #datosCuriosos {
+        .tituloUs {
+            justify-content: center;
+            text-align: center;
+        }
         .datosEspecificos {
             display: flex;
             justify-content: center;
@@ -119,12 +103,10 @@ body {
                 padding-right: 0px;
             }
 
-            @include md {
-                line-height: 200px;
-            }
-
-            @include sm {
-                line-height: 200px;
+            @include xl{
+                .datosEquipo{
+                    padding-left: 74px;
+                }
             }
 
             .datosExperiencia {
@@ -135,6 +117,11 @@ body {
                 font-weight: 700;
                 padding-inline: 108px;
             }
+            @include xl{
+                .datosExperiencia{
+                    padding-inline: 44px;
+                }
+            }
 
             .datosEvento {
                 color: #FF793E;
@@ -143,6 +130,11 @@ body {
                 font-style: normal;
                 font-weight: 700;
                 padding-left: 0px;
+            }
+            @include xl{
+                .datosEvento{
+                    padding-right: 55px;
+                }
             }
 
             .textoDatosEquipo {
@@ -154,11 +146,24 @@ body {
                 line-height: 35px;
             }
         }
-
+        
         @include md {
             .datosEspecificos {
                 flex-direction: column;
             }
+        }
+        
+    }
+    @include xl {
+        #datosCuriosos {
+            flex-wrap: wrap;
+            padding-top: 500px;
+        }
+    }
+    @include md {
+        #datosCuriosos {
+            flex-wrap: wrap;
+            padding-top: 100px;
         }
     }
 }

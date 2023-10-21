@@ -802,18 +802,13 @@ body main .seccionNosotros .fotosFundadores .fotoFundador {
 @media (max-width: 1200px) {
   body main .seccionNosotros .fotosFundadores {
     flex-wrap: wrap;
-    margin-top: 500px;
+    padding-top: 500px;
   }
 }
 @media (max-width: 768px) {
   body main .seccionNosotros .fotosFundadores {
-    flex-wrap: wrap;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 320px) {
-  body main .seccionNosotros .fotosFundadores {
     flex-direction: column;
+    padding-top: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -821,15 +816,9 @@ body main .seccionNosotros .fotosFundadores .fotoFundador {
     height: 2500px;
   }
 }
-body main #datoscuriosos .tituloUs {
+body #datosCuriosos .tituloUs {
   justify-content: center;
   text-align: center;
-}
-@media (max-width: 320px) {
-  body main #datoscuriosos {
-    height: 950px;
-    margin-top: 1554px;
-  }
 }
 body #datosCuriosos .datosEspecificos {
   display: flex;
@@ -845,14 +834,9 @@ body #datosCuriosos .datosEspecificos .datosEquipo {
   font-weight: 700;
   padding-right: 0px;
 }
-@media (max-width: 768px) {
-  body #datosCuriosos .datosEspecificos {
-    line-height: 200px;
-  }
-}
-@media (max-width: 320px) {
-  body #datosCuriosos .datosEspecificos {
-    line-height: 200px;
+@media (max-width: 1200px) {
+  body #datosCuriosos .datosEspecificos .datosEquipo {
+    padding-left: 74px;
   }
 }
 body #datosCuriosos .datosEspecificos .datosExperiencia {
@@ -863,6 +847,11 @@ body #datosCuriosos .datosEspecificos .datosExperiencia {
   font-weight: 700;
   padding-inline: 108px;
 }
+@media (max-width: 1200px) {
+  body #datosCuriosos .datosEspecificos .datosExperiencia {
+    padding-inline: 44px;
+  }
+}
 body #datosCuriosos .datosEspecificos .datosEvento {
   color: #FF793E;
   text-align: center;
@@ -870,6 +859,11 @@ body #datosCuriosos .datosEspecificos .datosEvento {
   font-style: normal;
   font-weight: 700;
   padding-left: 0px;
+}
+@media (max-width: 1200px) {
+  body #datosCuriosos .datosEspecificos .datosEvento {
+    padding-right: 55px;
+  }
 }
 body #datosCuriosos .datosEspecificos .textoDatosEquipo {
   color: #FFF;
@@ -882,6 +876,18 @@ body #datosCuriosos .datosEspecificos .textoDatosEquipo {
 @media (max-width: 768px) {
   body #datosCuriosos .datosEspecificos {
     flex-direction: column;
+  }
+}
+@media (max-width: 1200px) {
+  body #datosCuriosos {
+    flex-wrap: wrap;
+    padding-top: 500px;
+  }
+}
+@media (max-width: 768px) {
+  body #datosCuriosos {
+    flex-wrap: wrap;
+    padding-top: 100px;
   }
 }
 
@@ -956,14 +962,14 @@ main section form fieldset .formulario #mensaje {
   font-weight: 700;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main section form fieldset .formulario {
     width: 246px;
     padding: 4px 9px 0px 24px;
     margin: 20px 0px 30px 8px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main section form fieldset {
     width: 300px;
     height: 500px;
@@ -987,7 +993,7 @@ main section form .botonContacto:hover {
   color: #6025B5;
   transform: translate(0px, -10px);
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main section form .botonContacto {
     width: 270px;
   }
