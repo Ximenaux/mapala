@@ -836,7 +836,7 @@ body #datosCuriosos .datosEspecificos .datosEquipo {
 }
 @media (max-width: 1200px) {
   body #datosCuriosos .datosEspecificos .datosEquipo {
-    padding-left: 74px;
+    padding-left: 5px;
   }
 }
 body #datosCuriosos .datosEspecificos .datosExperiencia {
@@ -862,7 +862,7 @@ body #datosCuriosos .datosEspecificos .datosEvento {
 }
 @media (max-width: 1200px) {
   body #datosCuriosos .datosEspecificos .datosEvento {
-    padding-right: 55px;
+    padding-right: 5px;
   }
 }
 body #datosCuriosos .datosEspecificos .textoDatosEquipo {
